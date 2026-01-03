@@ -1,0 +1,2129 @@
+
+<!DOCTYPE html><html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
+  
+  
+  <meta name="generator" content="Hexo 8.1.1">
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
+  <meta name="theme-color" content="#f9fafb">
+  <title>test1 - 雎鸠不会飞</title>
+
+  
+    <meta name="description" content="王道数据结构目录​	 1. 绪论1.1 数据结构基本概念1.1.1 基本概念和术语 数据（单个数，字符之类的）、数据元素（struct） 结构类型 原子类型 结构类型 ADT   数据结构：逻辑结构、存储(物理)结构和数据的运算   1.1.2 数据结构三要素 逻辑结构 12345678910111213141516171819202122232425graph TD    A[数据的逻辑结构]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="test1">
+<meta property="og:url" content="http://jujiunofly.top/2026/01/03/test1/">
+<meta property="og:site_name" content="雎鸠不会飞">
+<meta property="og:description" content="王道数据结构目录​	 1. 绪论1.1 数据结构基本概念1.1.1 基本概念和术语 数据（单个数，字符之类的）、数据元素（struct） 结构类型 原子类型 结构类型 ADT   数据结构：逻辑结构、存储(物理)结构和数据的运算   1.1.2 数据结构三要素 逻辑结构 12345678910111213141516171819202122232425graph TD    A[数据的逻辑结构]">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-01-03T11:53:04.000Z">
+<meta property="article:modified_time" content="2026-01-03T11:55:18.861Z">
+<meta property="article:author" content="Ju Jiu">
+<meta property="article:tag" content="test1">
+<meta name="twitter:card" content="summary">
+  
+  
+  
+  <meta name="keywords" content="test1">
+
+  <!-- feed -->
+  
+
+  <link rel="stylesheet" href="/css/main.css?v=1.33.1">
+
+
+  
+
+  
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ju Jiu","sameAs":[]},"dateCreated":"2026-01-03T19:53:04+08:00","dateModified":"2026-01-03T19:55:18+08:00","datePublished":"2026-01-03T19:53:04+08:00","description":"","headline":"test1","mainEntityOfPage":{"@type":"WebPage","@id":"http://jujiunofly.top/2026/01/03/test1/"},"publisher":{"@type":"Organization","name":"Ju Jiu","sameAs":[]},"url":"http://jujiunofly.top/2026/01/03/test1/","keywords":"test1","image":[]}</script>
+  
+</head>
+<body>
+
+<div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="undefined" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">雎鸠不会飞</div></a></div></header>
+
+<div class="nav-area">
+
+<nav class="menu dis-select"></nav>
+</div>
+<div class="widgets">
+<div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="Search"></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div>
+
+
+
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">Recent Update</span></div><div class="widget-body fs14"><a class="item title" href="/2026/01/03/test1/"><span class="title">test1</span></a><a class="item title" href="/2026/01/03/hello-world/"><span class="title">Paodou</span></a></div></widget>
+</div>
+
+</div></aside><div class="l_main" id="main">
+
+
+
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2026-01-03T11:53:04.000Z">2026-01-03</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2026-01-03T11:55:18.861Z">2026-01-03</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>test1</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><h1 id="王道数据结构"><a href="#王道数据结构" class="headerlink" title="王道数据结构"></a>王道数据结构</h1><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>​	</p>
+<h2 id="1-绪论"><a href="#1-绪论" class="headerlink" title="1. 绪论"></a>1. 绪论</h2><h3 id="1-1-数据结构基本概念"><a href="#1-1-数据结构基本概念" class="headerlink" title="1.1 数据结构基本概念"></a>1.1 数据结构基本概念</h3><h4 id="1-1-1-基本概念和术语"><a href="#1-1-1-基本概念和术语" class="headerlink" title="1.1.1 基本概念和术语"></a>1.1.1 基本概念和术语</h4><ol>
+<li>数据（单个数，字符之类的）、数据元素（struct）</li>
+<li>结构类型<ol>
+<li>原子类型</li>
+<li>结构类型</li>
+<li>ADT</li>
+</ol>
+</li>
+<li>数据结构：<strong>逻辑结构</strong>、<strong>存储(物理)结构</strong>和<strong>数据的运算</strong></li>
+</ol>
+<hr>
+<h4 id="1-1-2-数据结构三要素"><a href="#1-1-2-数据结构三要素" class="headerlink" title="1.1.2 数据结构三要素"></a>1.1.2 数据结构三要素</h4><ol>
+<li><p><strong>逻辑结构</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">graph TD</span><br><span class="line">    A[数据的逻辑结构] --&gt; B[线性结构]</span><br><span class="line">    A --&gt; C[非线性结构]</span><br><span class="line"></span><br><span class="line">    %% 线性结构部分</span><br><span class="line">    B --&gt; D[受限线性表]</span><br><span class="line">    B --&gt; E[线性表推广]</span><br><span class="line"></span><br><span class="line">    B --&gt; F[一般线性表]</span><br><span class="line">    D --&gt; G[栈和队列]</span><br><span class="line"></span><br><span class="line">    D --&gt; H[串]</span><br><span class="line">    E --&gt; I[数组]</span><br><span class="line"></span><br><span class="line">    %% 非线性结构部分</span><br><span class="line">    C --&gt; J[集合]</span><br><span class="line">    C --&gt; K[树形结构]</span><br><span class="line">    C --&gt; L[图状结构]</span><br><span class="line"></span><br><span class="line">    K --&gt; M[一般树]</span><br><span class="line">    K --&gt; N[二叉树]</span><br><span class="line"></span><br><span class="line">    L --&gt; O[有向图]</span><br><span class="line">    L --&gt; P[无向图]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p><strong>存储结构</strong></p>
+<ol>
+<li>顺序存储 一整块存储单元外部碎片多？占的多但是 <strong>随机存取</strong></li>
+<li>链式存储 不会出现外部碎片 <strong>顺序存取</strong></li>
+<li>索引存储 操作系统的</li>
+<li>散列存储 哈希存储，根据元素关键字可以计算出该元素的存储地址</li>
+</ol>
+</li>
+<li><p>数据的运算：增删查改</p>
+</li>
+</ol>
+<hr>
+<h4 id="1-1-3-错题分析"><a href="#1-1-3-错题分析" class="headerlink" title="1.1.3 错题分析"></a>1.1.3 错题分析</h4><p>3，</p>
+<hr>
+<h3 id="1-2-算法和算法评价"><a href="#1-2-算法和算法评价" class="headerlink" title="1.2 算法和算法评价"></a>1.2 算法和算法评价</h3><h4 id="1-2-1-算法和算法评价"><a href="#1-2-1-算法和算法评价" class="headerlink" title="1.2.1 算法和算法评价"></a>1.2.1 算法和算法评价</h4><blockquote>
+<p><strong>五个重要特征</strong></p>
+</blockquote>
+<ol>
+<li>有穷性 有限时间空间</li>
+<li>确定性 相同输出 </li>
+<li>可行性</li>
+<li>输入</li>
+<li>输出</li>
+</ol>
+<blockquote>
+<p><strong>好的算法</strong></p>
+</blockquote>
+<ol>
+<li>正确性</li>
+<li>可读性</li>
+<li>健壮性 非法输入</li>
+<li>高效率和低存储量需求</li>
+</ol>
+<hr>
+<h4 id="1-2-2-算法效率的度量"><a href="#1-2-2-算法效率的度量" class="headerlink" title="1.2.2 算法效率的度量"></a>1.2.2 算法效率的度量</h4><ol>
+<li>&#x3D;&#x3D;时间复杂度&#x3D;&#x3D;</li>
+<li>空间复杂度</li>
+</ol>
+<hr>
+<h4 id="1-2-3-错题"><a href="#1-2-3-错题" class="headerlink" title="1.2.3 错题"></a>1.2.3 错题</h4><p>2， 14， 17</p>
+<hr>
+<h2 id="2-线性表"><a href="#2-线性表" class="headerlink" title="2. 线性表"></a>2. 线性表</h2><h3 id="2-1-线性表的定义和基本操作"><a href="#2-1-线性表的定义和基本操作" class="headerlink" title="2.1 线性表的定义和基本操作"></a>2.1 线性表的定义和基本操作</h3><h4 id="2-1-1-线性表的定义"><a href="#2-1-1-线性表的定义" class="headerlink" title="2.1.1 线性表的定义"></a>2.1.1 线性表的定义</h4><blockquote>
+<p><strong>一些概念性的术语</strong></p>
+</blockquote>
+<p>相同数据类型的优先序列、表头元素、表尾元素、直接前驱、直接后继</p>
+<hr>
+<h4 id="2-1-2-线性表的基本操作"><a href="#2-1-2-线性表的基本操作" class="headerlink" title="2.1.2 线性表的基本操作"></a>2.1.2 线性表的基本操作</h4><blockquote>
+<p><strong>增、删、查、插、改、打印、判空、表长</strong></p>
+</blockquote>
+<hr>
+<h4 id="2-1-3-错题分析"><a href="#2-1-3-错题分析" class="headerlink" title="2.1.3  错题分析"></a>2.1.3  错题分析</h4><p><strong>NO</strong></p>
+<hr>
+<h3 id="2-2-线性表的顺序表示"><a href="#2-2-线性表的顺序表示" class="headerlink" title="2.2 线性表的顺序表示"></a>2.2 线性表的顺序表示</h3><h4 id="2-2-1-顺序表的定义"><a href="#2-2-1-顺序表的定义" class="headerlink" title="2.2.1 顺序表的定义"></a>2.2.1 顺序表的定义</h4><blockquote>
+<p><strong>一些术语</strong></p>
+</blockquote>
+<p>线性表的的顺序存储也称线性表、<strong>逻辑顺序与其存储的物理顺序相同</strong></p>
+<p><strong>LOC(A)</strong> 表头再加入每个步长 + sizeof(element) 可访问到地址</p>
+<p>可<strong>静态分配</strong>和<strong>动态分配</strong></p>
+<blockquote>
+<p><strong>优点</strong></p>
+</blockquote>
+<ol>
+<li><strong>随机访问</strong> $O(1)$</li>
+<li><strong>存储密度高</strong>，每个结点只存储元素</li>
+</ol>
+<blockquote>
+<p><strong>缺点</strong></p>
+</blockquote>
+<ol>
+<li>**插入，**需要移动大量元素，平均 $n&#x2F;2$ ，<strong>删除</strong>平均移动 $(n-1)&#x2F;2$</li>
+<li>顺序存储分配的是一段连续的存储空间，不够灵活</li>
+</ol>
+<hr>
+<h4 id="2-2-2-顺序表上基本操作的实现"><a href="#2-2-2-顺序表上基本操作的实现" class="headerlink" title="2.2.2 顺序表上基本操作的实现"></a>2.2.2 顺序表上基本操作的实现</h4><p><strong>增删查改</strong></p>
+<hr>
+<h4 id="2-2-3-错题"><a href="#2-2-3-错题" class="headerlink" title="2.2.3 错题"></a>2.2.3 错题</h4><p>2，3，4，6，13</p>
+<hr>
+<h3 id="2-3-线性表的链式表示"><a href="#2-3-线性表的链式表示" class="headerlink" title="2.3 线性表的链式表示"></a>2.3 线性表的链式表示</h3><h4 id="2-3-1-单链表的定义"><a href="#2-3-1-单链表的定义" class="headerlink" title="2.3.1 单链表的定义"></a>2.3.1 单链表的定义</h4><blockquote>
+<p><strong>一些术语</strong></p>
+</blockquote>
+<p><strong>非随机存取</strong>、头结点、头指针、尾结点、带表头结点</p>
+<blockquote>
+<p><strong>引入头结点优点</strong></p>
+</blockquote>
+<ol>
+<li>链表的第一个位置与其他操作无异，无须特殊处理</li>
+<li>无论链表是否为空，其头指针都是指向头结点的非空指针，空表和非空表的处理得到了统一</li>
+</ol>
+<hr>
+<h4 id="2-3-2-单链表上基本操作的实现"><a href="#2-3-2-单链表上基本操作的实现" class="headerlink" title="2.3.2 单链表上基本操作的实现"></a>2.3.2 单链表上基本操作的实现</h4><blockquote>
+<p><strong>$O(n)$</strong></p>
+</blockquote>
+<p>表长、按位查找、按值查找、插入、删、<strong>头插顺序相反、尾插顺序一样</strong></p>
+<hr>
+<h4 id="2-3-3-双链表"><a href="#2-3-3-双链表" class="headerlink" title="2.3.3 双链表"></a>2.3.3 双链表</h4><blockquote>
+<p><strong>胖豆都会</strong> <strong>prior</strong></p>
+</blockquote>
+<hr>
+<h4 id="2-3-4-循环链表"><a href="#2-3-4-循环链表" class="headerlink" title="2.3.4 循环链表"></a>2.3.4 循环链表</h4><blockquote>
+<p><strong>1.</strong> 循环单链表</p>
+</blockquote>
+<blockquote>
+<p><strong>2.</strong> 循环双链表</p>
+</blockquote>
+<hr>
+<h4 id="2-3-5-静态链表"><a href="#2-3-5-静态链表" class="headerlink" title="2.3.5 静态链表"></a>2.3.5 静态链表</h4><blockquote>
+<p>用<strong>数组</strong>来描述线性表的链式存储结构</p>
+</blockquote>
+<p>以 <code>next = -1</code> 作为结束标志<br>只需要修改指针不需要移动元素</p>
+<p>应用在Basic等无指针的高级语言</p>
+<hr>
+<h4 id="2-3-6-顺序表和链表的比较"><a href="#2-3-6-顺序表和链表的比较" class="headerlink" title="2.3.6 顺序表和链表的比较"></a>2.3.6 顺序表和链表的比较</h4><blockquote>
+<p><strong>1.</strong> 存取方式</p>
+</blockquote>
+<p>顺序表既可以<strong>顺序存取</strong>、也可以<strong>随机存取</strong></p>
+<p>链表只能从表头开始依次存取</p>
+<blockquote>
+<p><strong>2.</strong> 逻辑结构和物理结构</p>
+</blockquote>
+<p>顺序存储，逻辑相邻物理也相邻，链式存储则物理不一定</p>
+<blockquote>
+<p><strong>3.</strong> 查找、插入和删除操作</p>
+</blockquote>
+<p>按值查找均为 $O(n)$</p>
+<p>按位查找顺序表<strong>有序</strong>可用折半查找 $O(\log n)$ </p>
+<p>按位查找顺序表 $O(1)$ 链表平均时间 $O(n)$</p>
+<p>顺序表的插、删麻烦，得移动很多元素，链表只修改指针域即可</p>
+<blockquote>
+<p><strong>4.</strong> 空间分配</p>
+</blockquote>
+<p>很胖豆</p>
+<blockquote>
+<p><strong>选取</strong></p>
+</blockquote>
+<ol>
+<li>基于存储考虑</li>
+<li>基于运算考虑</li>
+<li>基于环境考虑</li>
+</ol>
+<hr>
+<h4 id="2-3-7-错题"><a href="#2-3-7-错题" class="headerlink" title="2.3.7 错题"></a>2.3.7 错题</h4><p>3，6，7，10，18，23，24，25，26，27，31</p>
+<hr>
+<h2 id="3-栈-队列-数组"><a href="#3-栈-队列-数组" class="headerlink" title="3. 栈 队列 数组"></a>3. 栈 队列 数组</h2><h3 id="3-1-栈1"><a href="#3-1-栈1" class="headerlink" title="3.1 栈1"></a>3.1 栈1</h3><h4 id="3-1-1-栈的基本概念"><a href="#3-1-1-栈的基本概念" class="headerlink" title="3.1.1 栈的基本概念"></a>3.1.1 栈的基本概念</h4><blockquote>
+<p><strong>1. 栈的一些术语</strong></p>
+</blockquote>
+<p><strong>先进后出</strong>，<strong>栈顶，</strong> <strong>栈底</strong>，<strong>空栈</strong></p>
+<blockquote>
+<p><strong>2. 栈的基本操作</strong></p>
+</blockquote>
+<p><strong>InitialStack(), StackEmpty(), Push(), Pop(), GetTop(), DestroyStack()</strong></p>
+<blockquote>
+<p><strong>3. n 个不同元素入栈时，出栈元素不同<code>排列的个数</code>为：</strong> $\frac{1}{n+1} \C_{2n}^{n}$ </p>
+</blockquote>
+<hr>
+<h4 id="3-1-2-栈的顺序存储结构"><a href="#3-1-2-栈的顺序存储结构" class="headerlink" title="3.1.2 栈的顺序存储结构"></a>3.1.2 栈的顺序存储结构</h4><blockquote>
+<p><strong>栈是一种操作受限的线性表，类似于线性表，两种存储方式</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>顺序栈</strong></p>
+<p>一个指针 <code>top</code> 来指向栈顶</p>
+<p>顺序栈的入栈受数组的上界约束</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> &#123;</span><br><span class="line">  <span class="type">int</span> data[Maxsize];</span><br><span class="line">  <span class="type">int</span> top;</span><br><span class="line">&#125; Stack;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>基本操作</strong></p>
+<p>经典 5 板斧</p>
+</li>
+<li><p><strong>共享栈</strong></p>
+<p>俩指针差 <code>1</code> 栈满</p>
+</li>
+</ol>
+<hr>
+<h5 id="3-1-3-栈的链式存储结构"><a href="#3-1-3-栈的链式存储结构" class="headerlink" title="3.1.3 栈的链式存储结构"></a>3.1.3 栈的链式存储结构</h5><blockquote>
+<p><strong>链栈，单链表，都在表头操作，注意带不带表头</strong></p>
+</blockquote>
+<hr>
+<h5 id="3-1-4-错题"><a href="#3-1-4-错题" class="headerlink" title="3.1.4 错题"></a>3.1.4 错题</h5><p>9，23，24，25，</p>
+<hr>
+<h3 id="3-2-队列"><a href="#3-2-队列" class="headerlink" title="3.2 队列"></a>3.2 队列</h3><h4 id="3-2-1-队列的基本概念"><a href="#3-2-1-队列的基本概念" class="headerlink" title="3.2.1 队列的基本概念"></a>3.2.1 队列的基本概念</h4><blockquote>
+<p><strong>1.</strong> <strong>一些术语</strong></p>
+</blockquote>
+<p><strong>Queue, 先进先出， 出队离队，入队进队</strong></p>
+<blockquote>
+<p><strong>2. 常见操作 5 板斧</strong></p>
+</blockquote>
+<hr>
+<h4 id="3-2-2-队列的顺序存储结构"><a href="#3-2-2-队列的顺序存储结构" class="headerlink" title="3.2.2 队列的顺序存储结构"></a>3.2.2 队列的顺序存储结构</h4><blockquote>
+<p><strong>1.</strong> 队列的顺序存储结构</p>
+</blockquote>
+<p>队首<code>front</code> 队尾 <code>rear</code> </p>
+<p>会导致队发生上溢出，因此退出了循环队列</p>
+<blockquote>
+<p><strong>2.</strong> 循环队列</p>
+</blockquote>
+<p>初始时： Q.front &#x3D; Q.rear &#x3D; 0;<br>队首指针进 1 : Q.front &#x3D; (Q.front + 1) % Maxsize<br>队尾指针进 1 : Q.rear &#x3D; (Q.rear + 1) % Maxsize<br>队列长度：(Q.rear + Maxsize - Q.front) % Maxsize<br>出入队：指针都按<strong>顺时针方向</strong>进 1</p>
+<p>队空的条件是 Q.front &#x3D;&#x3D; Q.rear 但是为来区分队空<strong>还是队满</strong></p>
+<blockquote>
+<p><strong>三种处理方式：</strong></p>
+</blockquote>
+<p>1）<strong>牺牲一个单元用来区分队满和队空</strong>，入队时少用一个单元</p>
+<p>队满：Q.front &#x3D; (Q.rear + 1) % Maxsize</p>
+<p>队空：Q.front &#x3D;&#x3D; Q.rear</p>
+<p>队列中个数元素 (Q.rear + Maxsize - Q.front) % Maxsize</p>
+<p>2）类型中增加一个<code>size</code>数据成员，表示元素个数。</p>
+<p>队满：Q.size &#x3D;&#x3D; Q.Maxsize</p>
+<p>队空：Q.size &#x3D;&#x3D; 0;</p>
+<p>3）增加一个 <code>tag</code> 数据成员，删除成功 tag 设为 0，插入成功 tag 设为 1</p>
+<blockquote>
+<p>**3. **循环队列基本操作</p>
+</blockquote>
+<p><strong>4 板斧</strong></p>
+<hr>
+<h4 id="3-2-3-队列的链式存储结构"><a href="#3-2-3-队列的链式存储结构" class="headerlink" title="3.2.3 队列的链式存储结构"></a>3.2.3 队列的链式存储结构</h4><blockquote>
+<p><strong>1.</strong> 队列的链式存储</p>
+</blockquote>
+<p>含有链式队列front和rear的两个指针 不带头节时，两者都指向NULL时，链式队列为空</p>
+<blockquote>
+<p><strong>2.</strong> 链式队列的基本操作</p>
+</blockquote>
+<p><strong>4 板斧</strong></p>
+<hr>
+<h4 id="3-2-4-双端队列"><a href="#3-2-4-双端队列" class="headerlink" title="3.2.4 双端队列"></a>3.2.4 双端队列</h4><blockquote>
+<p>允许两端进行插入和删除操作的 <strong>线性表</strong></p>
+</blockquote>
+<p><strong>双端受限某端可以的</strong>，具体分析 <strong>包吃包住</strong></p>
+<hr>
+<h4 id="3-2-5-错题"><a href="#3-2-5-错题" class="headerlink" title="3.2.5 错题"></a>3.2.5 错题</h4><p>2，6，11，12，16，18</p>
+<hr>
+<h3 id="3-3-栈和队列的应用"><a href="#3-3-栈和队列的应用" class="headerlink" title="3.3 栈和队列的应用"></a>3.3 栈和队列的应用</h3><h4 id="3-3-1-栈-在括号匹配中的应用"><a href="#3-3-1-栈-在括号匹配中的应用" class="headerlink" title="3.3.1 &#x3D;&#x3D;栈&#x3D;&#x3D;在括号匹配中的应用"></a>3.3.1 &#x3D;&#x3D;栈&#x3D;&#x3D;在括号匹配中的应用</h4><blockquote>
+<p><strong>胖豆都会但是得Show me code.</strong></p>
+</blockquote>
+<hr>
+<h4 id="3-3-2-栈-在表达式求值中的应用"><a href="#3-3-2-栈-在表达式求值中的应用" class="headerlink" title="3.3.2 &#x3D;&#x3D;栈&#x3D;&#x3D;在表达式求值中的应用"></a>3.3.2 &#x3D;&#x3D;栈&#x3D;&#x3D;在表达式求值中的应用</h4><blockquote>
+<p>[!tip]</p>
+<p>左优先原则</p>
+</blockquote>
+<blockquote>
+<p><strong>1. 算术表达式</strong></p>
+</blockquote>
+<ol>
+<li>&#x3D;&#x3D;中缀表达式&#x3D;&#x3D;</li>
+<li>&#x3D;&#x3D;后缀表达式&#x3D;&#x3D; 运算符后边</li>
+<li>前缀表达式</li>
+</ol>
+<blockquote>
+<p><strong>2. 中缀表达式转后缀表达式</strong></p>
+</blockquote>
+<p>手算：左优先原则，然后操作就行</p>
+<p>栈实现：得练呀</p>
+<ol>
+<li><p>遇到 <code>操作数</code> 直接加&#x3D;&#x3D;入&#x3D;&#x3D;后缀表达式</p>
+</li>
+<li><p>遇到 <code>界限符</code> ‘(’ 直接&#x3D;&#x3D;入&#x3D;&#x3D;，‘)’ 弹到胖豆出现并删除胖豆s</p>
+</li>
+<li><p>遇到 <code>运算符</code> ：</p>
+<p>​    -1)  若优先级 <strong>高于</strong> 栈顶的运算符或遇到栈顶为(, 直接&#x3D;&#x3D;入&#x3D;&#x3D;，</p>
+<p>​    -2）若其优先级 **低于 **或 <strong>等于</strong>，则一次弹出栈中的运算符加&#x3D;&#x3D;入&#x3D;&#x3D;，干穿到底，或者到 -1) 停</p>
+</li>
+<li><p>最后将栈弹空</p>
+</li>
+<li><p>细节之：<strong>考虑栈的深度</strong></p>
+</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// 待补充</span><br></pre></td></tr></table></figure>
+
+
+
+<blockquote>
+<p><strong>3. 后缀表达式求值</strong>（合成大西瓜）</p>
+<p><strong>值 入栈 符号进行合成大西瓜 再入栈 最后栈顶（只剩一个元素即位所求答案）</strong></p>
+<p>2，3 可以双料特工进行</p>
+</blockquote>
+<hr>
+<h4 id="3-3-3-栈-在递归中的应用"><a href="#3-3-3-栈-在递归中的应用" class="headerlink" title="3.3.3 &#x3D;&#x3D;栈&#x3D;&#x3D;在递归中的应用"></a>3.3.3 &#x3D;&#x3D;栈&#x3D;&#x3D;在递归中的应用</h4><blockquote>
+<p><strong>1. 递归表达式（递归体）</strong></p>
+<p><strong>2. 边界条件（递归出口）</strong></p>
+<p><strong>递归的精髓在于能否将原本问题转换为属性相同但规模较小的问题</strong></p>
+<p>关键之求递归的次数可以画出递归数</p>
+</blockquote>
+<hr>
+<h4 id="3-3-4-队列在层次遍历中的应用"><a href="#3-3-4-队列在层次遍历中的应用" class="headerlink" title="3.3.4 队列在层次遍历中的应用"></a>3.3.4 <code>队列</code>在层次遍历中的应用</h4><blockquote>
+<p><strong>理解过程和代码实现</strong></p>
+</blockquote>
+<hr>
+<h4 id="3-3-5-队列-在计算机系统中的应用"><a href="#3-3-5-队列-在计算机系统中的应用" class="headerlink" title="3.3.5 队列 在计算机系统中的应用"></a>3.3.5 <strong><code>队列</code></strong> 在计算机系统中的应用</h4><blockquote>
+<p><strong>1. 缓冲区的逻辑结构</strong> FCFS</p>
+</blockquote>
+<p>打印数据缓冲区，按先进先出的顺序来，也就是队列呀</p>
+<blockquote>
+<p><strong>2. 多队列出队&#x2F;入队的错做的应用</strong></p>
+</blockquote>
+<p>CPU中央处理器资源的竞争</p>
+<hr>
+<h4 id="3-3-6-错题"><a href="#3-3-6-错题" class="headerlink" title="3.3.6 错题"></a>3.3.6 错题</h4><p>7，8，16，17</p>
+<hr>
+<h3 id="3-4-数组和特殊矩阵"><a href="#3-4-数组和特殊矩阵" class="headerlink" title="3.4 数组和特殊矩阵"></a>3.4 数组和特殊矩阵</h3><h4 id="3-4-1-数组的定义"><a href="#3-4-1-数组的定义" class="headerlink" title="3.4.1 数组的定义"></a>3.4.1 数组的定义</h4><blockquote>
+<p><strong>线性表的推广</strong></p>
+</blockquote>
+<hr>
+<h4 id="3-4-2-数组的存储结构"><a href="#3-4-2-数组的存储结构" class="headerlink" title="3.4.2 数组的存储结构"></a>3.4.2 数组的存储结构</h4><blockquote>
+<p><strong>注意<u>行优先</u>还是<u>列优先</u></strong></p>
+<p>注意<strong>下标</strong></p>
+</blockquote>
+<hr>
+<h4 id="3-4-3-特殊矩阵的压缩存储"><a href="#3-4-3-特殊矩阵的压缩存储" class="headerlink" title="3.4.3 特殊矩阵的压缩存储"></a>3.4.3 特殊矩阵的压缩存储</h4><blockquote>
+<p><strong>1. 对称矩阵</strong></p>
+</blockquote>
+<p>注意<code>下标</code></p>
+<blockquote>
+<p><strong>2. 三角矩阵</strong></p>
+</blockquote>
+<p>注意<code>下标</code>和 <code>上三角</code>还是<code>下三角</code></p>
+<p>多存储了一个常数 <strong>C</strong> 存储空间 + 1</p>
+<blockquote>
+<p><strong>3. 三对角矩阵</strong></p>
+</blockquote>
+<p>同上</p>
+<hr>
+<h4 id="3-4-4-稀疏矩阵"><a href="#3-4-4-稀疏矩阵" class="headerlink" title="3.4.4 稀疏矩阵"></a>3.4.4 稀疏矩阵</h4><blockquote>
+<p><strong>三元组</strong> 和 <strong>十字链表</strong> 来存</p>
+</blockquote>
+<p>三元组（或 <strong>十字链表</strong>）除了存储<u>行标，列标，值</u>，还要存<u>矩阵行数，列数</u></p>
+<p>行优先顺序遍历稀疏矩阵非0元素然后加入到三元组表</p>
+<p>&#x3D;&#x3D;P97 转置算法&#x3D;&#x3D;</p>
+<hr>
+<h4 id="3-4-5-错题"><a href="#3-4-5-错题" class="headerlink" title="3.4.5 错题"></a>3.4.5 错题</h4><p>8</p>
+<hr>
+<h2 id="4-串"><a href="#4-串" class="headerlink" title="4. 串"></a>4. 串</h2><h3 id="4-1-串的定义和实现"><a href="#4-1-串的定义和实现" class="headerlink" title="4.1 串的定义和实现"></a>4.1 串的定义和实现</h3><h4 id="4-1-1-串的定义"><a href="#4-1-1-串的定义" class="headerlink" title="4.1.1 串的定义"></a>4.1.1 串的定义</h4><blockquote>
+<p><strong>一些基本概念</strong></p>
+</blockquote>
+<hr>
+<h4 id="4-1-2-串的基本操作"><a href="#4-1-2-串的基本操作" class="headerlink" title="4.1.2 串的基本操作"></a>4.1.2 串的基本操作</h4><blockquote>
+<p> <strong>经典操作</strong></p>
+</blockquote>
+<hr>
+<p>4.1.3 串的存储结构</p>
+<ol>
+<li><strong>定长顺序存储表示</strong></li>
+</ol>
+<blockquote>
+<p><strong>结束符为“\0”</strong></p>
+</blockquote>
+<ol start="2">
+<li><p><strong>堆分配存储表示</strong></p>
+<p><strong>分配到堆区一段连续的空间</strong></p>
+</li>
+<li><p><strong>块链存储表示</strong></p>
+<blockquote>
+<p><strong>链表</strong>类似的连接起来</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="4-2-串的模式匹配"><a href="#4-2-串的模式匹配" class="headerlink" title="4.2 串的模式匹配"></a>4.2 串的模式匹配</h3><h4 id="4-2-1-简单的模式匹配算法（朴素模式匹配算法）"><a href="#4-2-1-简单的模式匹配算法（朴素模式匹配算法）" class="headerlink" title="4.2.1 简单的模式匹配算法（朴素模式匹配算法）"></a>4.2.1 简单的模式匹配算法（朴素模式匹配算法）</h4><blockquote>
+<p><strong>主串与模式串分别为 n 和 m</strong></p>
+</blockquote>
+<p><strong>最多</strong>需要进行 $n - m + 1$ 趟匹配 对多 m 次比较 最坏时间复杂度为 O(mn)</p>
+<hr>
+<h4 id="4-2-2-KMP"><a href="#4-2-2-KMP" class="headerlink" title="4.2.2 KMP"></a>4.2.2 KMP</h4><blockquote>
+<p><strong>1. 算法基本原理</strong></p>
+</blockquote>
+<p>不走回头路，模式串又恨多重复子串</p>
+<p>$O( m +n)$ 时间复杂度</p>
+<p>关键在于next数组的求解</p>
+<blockquote>
+<p><strong>2. 手算next数组</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>3. next数组的推理公式</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>4. 算法的实现</strong></p>
+</blockquote>
+<hr>
+<h4 id="4-2-3-KMP算法的改进"><a href="#4-2-3-KMP算法的改进" class="headerlink" title="4.2.3 KMP算法的改进"></a>4.2.3 KMP算法的改进</h4><blockquote>
+<p>Next*数组：目的未来减少移动的次数</p>
+</blockquote>
+<hr>
+<h4 id="4-2-4-错题"><a href="#4-2-4-错题" class="headerlink" title="4.2.4 错题"></a>4.2.4 错题</h4><p>8，10，13</p>
+<hr>
+<h2 id="5-树与二叉树"><a href="#5-树与二叉树" class="headerlink" title="5. 树与二叉树"></a>5. 树与二叉树</h2><h3 id="5-1-树的基本概念"><a href="#5-1-树的基本概念" class="headerlink" title="5.1 树的基本概念"></a>5.1 树的基本概念</h3><h4 id="5-1-1-树的定义"><a href="#5-1-1-树的定义" class="headerlink" title="5.1.1 树的定义"></a>5.1.1 树的定义</h4><blockquote>
+<p><strong>一些术语</strong></p>
+<p>空树，根结点，子树</p>
+<p>除了根结点以外的所有结点有且仅有一个前驱（<strong>与图的差异</strong>）</p>
+<p>可以有0个或多个后继</p>
+</blockquote>
+<hr>
+<h4 id="5-1-2-基本术语"><a href="#5-1-2-基本术语" class="headerlink" title="5.1.2 基本术语"></a>5.1.2 基本术语</h4><blockquote>
+<p><strong>基本术语</strong></p>
+<p>1）祖先，子孙，孩子，兄弟和堂兄弟</p>
+<p>2）<strong>层次</strong>（从(根)上往下、<strong>深度</strong>和<strong>高度</strong></p>
+<p>3）<strong>结点的度</strong>（孩子个数）<strong>树的度</strong>（所有结点最大的度）</p>
+<p>4）<strong>分枝结点</strong> 和 <strong>叶结点</strong></p>
+<p>5）有序树和无序树</p>
+<p>6）路径和<strong>路径长度</strong>（<strong>经过边的个数</strong>）</p>
+<p>7）<strong>森林</strong></p>
+</blockquote>
+<hr>
+<h4 id="5-1-3-树的性质"><a href="#5-1-3-树的性质" class="headerlink" title="5.1.3 树的性质"></a>5.1.3 树的性质</h4><blockquote>
+<p>1）<strong>树的结点数目</strong> $n$ 等于所有结点的<strong>度数之和</strong>再<strong>加 1</strong></p>
+</blockquote>
+<blockquote>
+<p>2）度为<strong>m</strong>的树第i层<strong>最多$m^{i-1}$个结点</strong></p>
+</blockquote>
+<blockquote>
+<p>3）高度为h的m叉树至多有有 $\frac{(m^h-1)}{m-1}$</p>
+</blockquote>
+<blockquote>
+<p>4）度为m、具有n个结点的树的最小高度h为 $\left\lceil log_n(n(m+1)+1) \right\rceil$</p>
+<p>推导考虑前h-1层满插</p>
+</blockquote>
+<blockquote>
+<p>5）度为m、具有n个结点的树最大高度h为 $n-m+1$</p>
+</blockquote>
+<hr>
+<h4 id="5-1-4-错题"><a href="#5-1-4-错题" class="headerlink" title="5.1.4 错题"></a>5.1.4 错题</h4><p>3，4，7，8，10</p>
+<hr>
+<h3 id="5-2-二叉树的概念"><a href="#5-2-二叉树的概念" class="headerlink" title="5.2 二叉树的概念"></a>5.2 二叉树的概念</h3><h4 id="5-2-1-二叉树的定义及其主要特性"><a href="#5-2-1-二叉树的定义及其主要特性" class="headerlink" title="5.2.1 二叉树的定义及其主要特性"></a>5.2.1 二叉树的定义及其主要特性</h4><blockquote>
+<p><strong>1. 二叉树的定义</strong></p>
+</blockquote>
+<p>一些重要的术语，度为2的树至少为3个，但二叉树可以为空</p>
+<blockquote>
+<p><strong>2. 几种特殊的二叉树</strong></p>
+</blockquote>
+<p>1）<strong>满二叉树</strong> 插满了</p>
+<p>除了叶结点，其他结点<strong>度</strong>全为2</p>
+<p>（编号从 <strong>1</strong> 开始当前结点 <code>i</code>，父亲有的话是 $\lfloor i&#x2F;2 \rfloor$ 左孩子 <strong>2i</strong> 右孩子 <strong>2i + 1</strong></p>
+<p>2）<strong>完全二叉树</strong> 略逊满二叉</p>
+<p><strong>只有一个度为1</strong>的非叶结点</p>
+<p>3）<strong>二叉排序树</strong> 7.3</p>
+<p>左子树小于根结点右子树大于根结点</p>
+<p>4）<strong>二叉平衡树</strong> 7.3</p>
+<p><strong>任意结点</strong>左右子树高度差不超过1</p>
+<p>5）<strong>正则二叉树</strong> 每个分枝结点都有2个孩子，树中只有度为0或2的结点</p>
+<blockquote>
+<p><strong>3. 二叉树的性质</strong></p>
+</blockquote>
+<p>1）<strong>非空二叉树</strong>上的<strong>叶结点个数</strong>等于<strong>度为2</strong>的结点加1，即 $n_0 &#x3D; n_2+1$ （总结点数为 $n &#x3D; n_0 + n_1 + n_2$）</p>
+<p>​	-&gt; $n &#x3D; n_1 + 2n_2 + 1$</p>
+<p>​	-&gt; <strong>这两个联立可以求结点数 完全二叉树 <code>n1</code> 只能是 <code>0</code> 或 <code>1</code></strong></p>
+<p>2）非空二叉树的<strong>第k层</strong>最多 $2^{k-1}$ 个结点</p>
+<p>3）高度为h的二叉树最多有 $2^h - 1$</p>
+<p>4）&#x3D;&#x3D;<strong>完全二叉树</strong>&#x3D;&#x3D;编号从 <strong>1，2，3</strong> 开始时</p>
+<p>​		-&gt; 只有一个度为1的结点且是左孩子</p>
+<p>​		-&gt; 最后一个分枝结点为 $\lfloor n&#x2F;2\rfloor \ 如果 \ i \le \lfloor n&#x2F;2\rfloor $ 则为分枝否则叶</p>
+<p>​		-&gt; n为奇数分枝结点都有左右孩子，偶数最后一个分枝结点只有左孩子</p>
+<p>​		-&gt; 编号同满二叉树</p>
+<p>​		-&gt; 结点 i 所在层次（深度）$\lfloor\log_2i\rfloor + 1$</p>
+<p>5）具有<strong>n个结点的完全二叉树高度</strong>为 $\lceil \log_2(n+1)\rceil$ 或者 $\lfloor \log_2(n) \rfloor + 1$ </p>
+<hr>
+<h4 id="5-2-2-二叉树的存储结构"><a href="#5-2-2-二叉树的存储结构" class="headerlink" title="5.2.2 二叉树的存储结构"></a>5.2.2 二叉树的存储结构</h4><blockquote>
+<p><strong>1. 顺序存储</strong></p>
+</blockquote>
+<p>数组 胖豆都会</p>
+<blockquote>
+<p><strong>2. 链式存储</strong></p>
+</blockquote>
+<p>lchild data rchild 胖豆都会</p>
+<p>&#x3D;&#x3D;n个结点n+1个空链域&#x3D;&#x3D;</p>
+<hr>
+<h4 id="5-2-3-错题"><a href="#5-2-3-错题" class="headerlink" title="5.2.3 错题"></a>5.2.3 错题</h4><p>12，13，19，20，22，23</p>
+<hr>
+<h3 id="5-3-二叉树的遍历和线索二叉树"><a href="#5-3-二叉树的遍历和线索二叉树" class="headerlink" title="5.3 二叉树的遍历和线索二叉树"></a>5.3 二叉树的遍历和线索二叉树</h3><h4 id="5-3-1-二叉树的遍历"><a href="#5-3-1-二叉树的遍历" class="headerlink" title="5.3.1 二叉树的遍历"></a>5.3.1 二叉树的遍历</h4><blockquote>
+<p><strong>1. 先序遍历</strong> （前缀）</p>
+</blockquote>
+<p>根 左 右</p>
+<blockquote>
+<p><strong>2. 中序遍历</strong>（中缀）</p>
+</blockquote>
+<p>左 根 右</p>
+<blockquote>
+<p><strong>3. 后序遍历</strong>（后缀）</p>
+</blockquote>
+<p>左 右 根</p>
+<blockquote>
+<p><strong>4. 层次遍历</strong> 使用队列</p>
+</blockquote>
+<blockquote>
+<p><strong>5. 由遍历序列构造二叉树</strong></p>
+</blockquote>
+<p>前 + <strong>中</strong> ｜ 后 + <strong>中</strong> ｜ 层 + <strong>中</strong> 有 <strong>中</strong> 才可以<strong>构造唯一</strong></p>
+<hr>
+<h4 id="5-3-2-线索二叉树"><a href="#5-3-2-线索二叉树" class="headerlink" title="5.3.2 线索二叉树"></a>5.3.2 线索二叉树</h4><blockquote>
+<p><strong>1. 线索二叉树的基本概念</strong></p>
+<p>加快寻找遍历中结点前驱和后继的速度</p>
+</blockquote>
+<ul>
+<li>无左子树，lchild 指向其前驱结点，无右子树，rchild 指向其后继结点</li>
+<li>增加两个标志域，以标识指针指向左（右）孩子或前驱（后继）</li>
+<li>1 则为 后继或前驱</li>
+</ul>
+<blockquote>
+<p><strong>2. 中序线索二叉树的构造</strong></p>
+</blockquote>
+<p>&#x3D;&#x3D;胖豆推荐看视频&#x3D;&#x3D;</p>
+<blockquote>
+<p><strong>3. 中序线索二叉树的遍历</strong></p>
+</blockquote>
+<ul>
+<li>利用线索实现的非递归的遍历</li>
+<li>空间复杂度为 O(1)</li>
+</ul>
+<blockquote>
+<p><strong>4. 先序线索二叉树和后序线索二叉树</strong></p>
+</blockquote>
+<ul>
+<li>后序线索二叉树中找结点的后继较为复杂，三种情况：<ol>
+<li>结点x为根，则其后继为空</li>
+<li>若结点x是其双亲的右孩子，其双亲的左孩子且其双亲没有右子树，则后继结点为双亲</li>
+<li>若结点x是其双亲的左孩子，且其双亲右右子树，则其后继为双亲的右子树按后序遍历列出的第一个结点</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h4 id="5-3-3-错题"><a href="#5-3-3-错题" class="headerlink" title="5.3.3 错题"></a>5.3.3 错题</h4><p>6，15，24，25，28，31，32，33，37，42，43</p>
+<hr>
+<h3 id="5-4-树、森林"><a href="#5-4-树、森林" class="headerlink" title="5.4 树、森林"></a>5.4 树、森林</h3><h4 id="5-4-1-树的存储机构"><a href="#5-4-1-树的存储机构" class="headerlink" title="5.4.1 树的存储机构"></a>5.4.1 树的存储机构</h4><blockquote>
+<p><strong>1. 双亲表示法</strong></p>
+<p>可以很快找到双亲结点，但求结点的孩子需要遍历整个结构</p>
+</blockquote>
+<p>用一组存储空间来存储每个结点，同时在每个结点中增设一个伪指针，指向其双亲结点在数组的位置</p>
+<blockquote>
+<p><strong>2. 孩子表示法</strong></p>
+<p>找孩子多，找双亲少</p>
+</blockquote>
+<p>将每个结点的孩子视作一个线性表，以单链表作为存储结构，n个结点则有n个孩子链表</p>
+<blockquote>
+<p><strong>3. 孩子兄弟表示法</strong></p>
+<p>也称二叉树表示法, 左边为第一个孩子，右边指向第一个兄弟，</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> <span class="title class_">CSNode</span> &#123;</span><br><span class="line">  ElemType data;</span><br><span class="line">  <span class="keyword">struct</span> <span class="title class_">CSNode</span> *firstchild, *nextsibling;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="5-4-2-树、森林和二叉树的转换"><a href="#5-4-2-树、森林和二叉树的转换" class="headerlink" title="5.4.2 树、森林和二叉树的转换"></a>5.4.2 树、森林和二叉树的转换</h4><blockquote>
+<p><strong>1. 树转换成二叉树</strong></p>
+</blockquote>
+<p>1）兄弟结点之间加一连线</p>
+<p>2）对每个结点，只保留它与第一个孩子的连线，与其他孩子的连线全部抹掉</p>
+<p>3）以树根为轴心，顺时针旋转45度</p>
+<blockquote>
+<p><strong>2. 森林转化成二叉树</strong></p>
+</blockquote>
+<p>1）转换每棵为二叉树</p>
+<p>2）每棵树的根连一根线表示为兄弟关系</p>
+<p>3）以第一棵树的根为轴顺时针旋转45度</p>
+<blockquote>
+<p><strong>3. 二叉树转换为森林</strong></p>
+<p>这边是唯一的转换</p>
+</blockquote>
+<p>1）二叉树为非空则其根及其左子树为第一棵树的二叉树形式，将右链断开</p>
+<p>2）对右链执行上述（1）操作</p>
+<p>3）直至到没有右子树的二叉树为止</p>
+<hr>
+<h4 id="5-4-3-树和森林的遍历"><a href="#5-4-3-树和森林的遍历" class="headerlink" title="5.4.3 树和森林的遍历"></a>5.4.3 树和森林的遍历</h4><blockquote>
+<p><strong>1. 树的遍历</strong>（bupt为前序遍历，后序遍历，中序遍历，无中序遍历</p>
+</blockquote>
+<p>三种方式&#x3D;&#x3D;叶节点&#x3D;&#x3D;顺序不变</p>
+<p><strong>1）先根遍历</strong></p>
+<ul>
+<li>先访问根节点</li>
+<li>再依次遍历根节点的每个子树，遍历子树时仍然遵循<strong>先根后子树</strong>的规则</li>
+</ul>
+<p>最后与对应二叉树的<strong>先序遍历</strong>相同</p>
+<p><strong>2）后根遍历</strong></p>
+<ul>
+<li>先一次遍历根节点的每棵子树，遍历子树时依然按照<strong>先子树后根</strong>的规则</li>
+<li>再访问根节点</li>
+</ul>
+<p>最后与对应二叉树的<strong>中序遍历</strong>相同</p>
+<p><strong>3）层次遍历</strong></p>
+<ul>
+<li>同理二叉树</li>
+</ul>
+<blockquote>
+<p><strong>2. 森林的遍历</strong>（前序遍历和后序遍历）</p>
+</blockquote>
+<p>都从<strong>第一棵树</strong>开始</p>
+<p>前序同前后同中</p>
+<hr>
+<h4 id="5-4-4-错题"><a href="#5-4-4-错题" class="headerlink" title="5.4.4 错题"></a>5.4.4 错题</h4><p>4，8，9，15，</p>
+<h3 id="5-5-树与二叉树的应用"><a href="#5-5-树与二叉树的应用" class="headerlink" title="5.5 树与二叉树的应用"></a>5.5 树与二叉树的应用</h3><h4 id="5-5-1-哈夫曼树和哈夫曼编码"><a href="#5-5-1-哈夫曼树和哈夫曼编码" class="headerlink" title="5.5.1 哈夫曼树和哈夫曼编码"></a>5.5.1 哈夫曼树和哈夫曼编码</h4><blockquote>
+<p><strong>1. 哈夫曼树的定义</strong></p>
+</blockquote>
+<ul>
+<li>（叶节点的）带权路径长度 $WPL &#x3D;  \sum_{i&#x3D;1}^{n}w_il_i$ 称为树的带权路径长度</li>
+<li>带权路径最小的二叉树称为<strong>哈夫曼树</strong>，也称<strong>最优二叉树</strong></li>
+</ul>
+<blockquote>
+<p><strong>2. 哈夫曼树的构造</strong></p>
+</blockquote>
+<ul>
+<li><p>构造</p>
+<p>1）n个结点分别作为n棵含一个结点的二叉树，构成森林 F</p>
+<p>2）构造一个新节点从F中选取结点权值最小的树作为左右子树，<br> 并将新节点权值置为左、右子树上根节点的权值之和<br>3）从F中删除刚才选出的两棵树，同时将新得到的树加入F中</p>
+<p>4）重复2）3）直到只剩一棵</p>
+</li>
+<li><p><strong>性质</strong></p>
+<ol>
+<li>权值越小的结点到根结点的路径长度越大</li>
+<li>构造过程中新建了 <code>n-1</code> 个结点，因此哈夫曼树的结点总数为 <code>2n - 1</code></li>
+<li>每次构造都选择2棵子树作为新节点的孩子，因此不存在度为 <code>1</code> 的节点</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p><strong>3. 哈夫曼编码</strong>（可变<strong>长度编码</strong>，与之相对的是<strong>固定长度编码</strong></p>
+</blockquote>
+<p>左 0 右 1，胖豆是猪</p>
+<hr>
+<h4 id="5-5-2-并查集"><a href="#5-5-2-并查集" class="headerlink" title="5.5.2 并查集"></a>5.5.2 并查集</h4><blockquote>
+<p><strong>1. 并查集合的概念</strong></p>
+</blockquote>
+<p>1）Initial(S)<br>2）Union(S, Root1, Root2)<br>3）Find(S, x)</p>
+<blockquote>
+<p><strong>2. 并查集的存储结构</strong> （双亲表示法）（-1 即位根节点）</p>
+</blockquote>
+<p>好并，好查</p>
+<blockquote>
+<p><strong>3. 并查集的基本实现</strong></p>
+</blockquote>
+<p>胖豆都会</p>
+<blockquote>
+<p><strong>4. 并查集实现的优化</strong> </p>
+</blockquote>
+<p>1）改进 <code>Union</code> 操作</p>
+<ul>
+<li>根节点的绝对值表示高度，然后Union时小的并到大的</li>
+<li>深度不超过 $\lfloor log_2n \rfloor + 1$</li>
+</ul>
+<p>2）改进 <code>Find</code> 操作 （顺手的事）</p>
+<ul>
+<li>压缩路径</li>
+<li>循环找到根后再将循环一次将所有路径上的节点直接连到根上</li>
+</ul>
+<hr>
+<h4 id="5-5-3-错题"><a href="#5-5-3-错题" class="headerlink" title="5.5.3 错题"></a>5.5.3 错题</h4><p>6，8，9，11，13，21，22</p>
+<hr>
+<h2 id="6-图"><a href="#6-图" class="headerlink" title="6. 图"></a>6. 图</h2><h3 id="6-1-图的基本概念"><a href="#6-1-图的基本概念" class="headerlink" title="6.1 图的基本概念"></a>6.1 图的基本概念</h3><h4 id="6-1-1-图的定义"><a href="#6-1-1-图的定义" class="headerlink" title="6.1.1 图的定义"></a>6.1.1 图的定义</h4><blockquote>
+<p><strong>一些术语</strong></p>
+<p>顶点集 V，边集 E，有向图，无向图，简单图，多重图</p>
+<p>度，入度（入自己的度），出度（出别人的度）</p>
+<p>路径，路径长度（边数），回路或环（n个顶点，且有大雨n-1条边，一定有环路）</p>
+<p>简单路径（顶点不重复的路径），简单回路（只重复第一个和最后一个）</p>
+<p>距离（u到v最短路径存在则称为距离，若uv不存在记作∞）</p>
+<p>子图</p>
+</blockquote>
+<blockquote>
+<p><strong>无向图</strong></p>
+<p>连通，连通图（任意顶点连通）</p>
+<p>无向图中的<strong>极大连通子图</strong>称为<strong>连通分量</strong></p>
+<p>连通图：最少 n - 1 条边</p>
+<p>非连通图：最多 $C_{n-1}^{2}$ 条边</p>
+</blockquote>
+<blockquote>
+<p><strong>有向图</strong></p>
+<p>强连通图，强连通分量</p>
+<p>强连通图：最少 n 条边</p>
+<p>有向图中的<strong>极大强连通子图</strong>称为<strong>强连通分量</strong>子图都是强连通的</p>
+</blockquote>
+<blockquote>
+<p>连通图的生成树是包含图中<strong>全部顶点</strong>的一个<strong>极小连通子图</strong></p>
+<p>连通分量的生成树构成了<strong>生成森林</strong></p>
+</blockquote>
+<blockquote>
+<p>边的权，网（带权的边），带权路径长度</p>
+<p><strong>完全图</strong>（简单完全图）无向图满连 $n(n-1)&#x2F;2$ 条边 有向图乘2</p>
+<p>稠密图、稀疏图</p>
+<p>有向树：<strong>一个顶点的入度为0</strong>，其余顶点的入度均为 1 的有向图，称为有向树</p>
+</blockquote>
+<hr>
+<h4 id="6-1-2-错题"><a href="#6-1-2-错题" class="headerlink" title="6.1.2 错题"></a>6.1.2 错题</h4><p>5，6，9，11，13，16，18，二 1</p>
+<h3 id="6-2-图的存储及基本操作"><a href="#6-2-图的存储及基本操作" class="headerlink" title="6.2 图的存储及基本操作"></a>6.2 图的存储及基本操作</h3><h4 id="6-2-1-邻接矩阵法"><a href="#6-2-1-邻接矩阵法" class="headerlink" title="6.2.1 邻接矩阵法"></a>6.2.1 邻接矩阵法</h4><blockquote>
+<p>胖豆都会 $O(V^2)$</p>
+</blockquote>
+<hr>
+<h4 id="6-2-2-邻接表法"><a href="#6-2-2-邻接表法" class="headerlink" title="6.2.2 邻接表法"></a>6.2.2 邻接表法</h4><blockquote>
+<p>顺序+链式存储 表示方法不唯一</p>
+<p>$O(V +2E)$ 无向 有向 $O(V+E)$</p>
+</blockquote>
+<hr>
+<h4 id="6-2-3-十字链表法（有向图）"><a href="#6-2-3-十字链表法（有向图）" class="headerlink" title="6.2.3 十字链表法（有向图）"></a>6.2.3 十字链表法（有向图）</h4><blockquote>
+<p>删顶点方便，删边不方便-&gt;邻接表</p>
+<p>data firstin first out</p>
+<p>tailvex -&gt; headvex link tlink (data zone)</p>
+<p>headvex是箭头的开始 <code>-</code>，tailvex事箭头的结束<code>&gt;</code></p>
+</blockquote>
+<hr>
+<h4 id="6-2-4-邻接多重表（无向图）"><a href="#6-2-4-邻接多重表（无向图）" class="headerlink" title="6.2.4 邻接多重表（无向图）"></a>6.2.4 邻接多重表（无向图）</h4><blockquote>
+<p>删顶点方便，删边不方便-&gt;邻接表</p>
+<p>同十字链表法</p>
+</blockquote>
+<hr>
+<h4 id="6-2-5-图的基本操作"><a href="#6-2-5-图的基本操作" class="headerlink" title="6.2.5 图的基本操作"></a>6.2.5 图的基本操作</h4><blockquote>
+<p>几板斧罢了</p>
+</blockquote>
+<hr>
+<h4 id="6-2-6-错题"><a href="#6-2-6-错题" class="headerlink" title="6.2.6 错题"></a>6.2.6 错题</h4><p>19</p>
+<hr>
+<h3 id="6-3-图的遍历"><a href="#6-3-图的遍历" class="headerlink" title="6.3 图的遍历"></a>6.3 图的遍历</h3><h4 id="6-3-1-广度优先搜索"><a href="#6-3-1-广度优先搜索" class="headerlink" title="6.3.1 广度优先搜索"></a>6.3.1 广度优先搜索</h4><blockquote>
+<p>Breadth First Search</p>
+<p><strong>队列</strong>实现，类似于树的<strong>层序遍历</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>1. 性能分析</strong></p>
+</blockquote>
+<ul>
+<li>空间复杂度 $O(|V|)$</li>
+<li>时间复杂度 邻接表 $O(V + E)$ 邻接矩阵 $O(V^2)$</li>
+</ul>
+<blockquote>
+<p><strong>2. BFS求单源最短路径</strong></p>
+</blockquote>
+<ul>
+<li><p><strong>非带权的单源最短路径</strong></p>
+</li>
+<li><p><strong>code</strong></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">  </span><br></pre></td></tr></table></figure></li>
+</ul>
+<blockquote>
+<p><strong>3. 广度优先生成树</strong></p>
+</blockquote>
+<ul>
+<li>邻接矩阵唯一表示，邻接表不唯一</li>
+</ul>
+<hr>
+<h4 id="6-3-2-深度优先搜索"><a href="#6-3-2-深度优先搜索" class="headerlink" title="6.3.2 深度优先搜索"></a>6.3.2 深度优先搜索</h4><blockquote>
+<p><strong>回溯算法</strong></p>
+<p>Depth First Search 类似于树的<strong>先序遍历</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>1. 性能分析</strong></p>
+<p>与楼上一样</p>
+</blockquote>
+<blockquote>
+<p><strong>2. 深度优先的生成树和生成森林</strong></p>
+<ul>
+<li>对连通图调用DFS才能产生深度优先生成树</li>
+<li>否则为生成森林</li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="6-3-3-图的遍历与图的连通性"><a href="#6-3-3-图的遍历与图的连通性" class="headerlink" title="6.3.3 图的遍历与图的连通性"></a>6.3.3 图的遍历与图的连通性</h4><blockquote>
+<p>连通分量会导致多用一次DFS或DFS</p>
+</blockquote>
+<hr>
+<h4 id="6-3-4-错题"><a href="#6-3-4-错题" class="headerlink" title="6.3.4 错题"></a>6.3.4 错题</h4><p>2，9，12，14，17</p>
+<hr>
+<h3 id="6-4-图的应用"><a href="#6-4-图的应用" class="headerlink" title="6.4 图的应用"></a>6.4 图的应用</h3><h4 id="6-4-1-最小生成树"><a href="#6-4-1-最小生成树" class="headerlink" title="6.4.1 最小生成树"></a>6.4.1 最小生成树</h4><blockquote>
+<p>去一条边变成非连通图，加一条边会形成回路 <strong>n-1</strong></p>
+<p>不唯一</p>
+</blockquote>
+<blockquote>
+<p><strong>1. Prim算法</strong></p>
+<p>从<strong>顶点</strong>开始扩展</p>
+<p>$O(V^2)$ 不依赖于 $E$ 边稠密顶点稀疏</p>
+</blockquote>
+<ul>
+<li><strong>当前生成树</strong>的最小的</li>
+</ul>
+<blockquote>
+<p><strong>2. Kruskal 算法</strong> 只用<strong>邻接表</strong></p>
+<ul>
+<li><p>用<strong>堆</strong></p>
+</li>
+<li><p>按权值递增次序选择</p>
+</li>
+<li><p>每次选择需要  $\log_2E$</p>
+</li>
+<li><p>$O(E\log_2E)$ 不依赖V</p>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>全局最小的形不成回路加进来</li>
+<li>适用于<strong>边稀疏 顶点较多</strong></li>
+</ul>
+<hr>
+<h4 id="6-4-2-最短路径"><a href="#6-4-2-最短路径" class="headerlink" title="6.4.2 最短路径"></a>6.4.2 最短路径</h4><blockquote>
+<p><strong>1. Dijkstra 算法</strong></p>
+<p>与Prim都是贪心</p>
+<p>$O(V^2)$</p>
+<p><strong>负权值</strong>就不太行了</p>
+</blockquote>
+<blockquote>
+<p><strong>2. Floyd 算法</strong></p>
+<p>$O(V^3)$</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th><strong>BFS 算法</strong></th>
+<th><strong>Dijkstra 算法</strong></th>
+<th><strong>Floyd 算法</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>用途</strong></td>
+<td>求单源最短路径</td>
+<td>求单源最短路径</td>
+<td>求各顶点之间的最短路径</td>
+</tr>
+<tr>
+<td><strong>无权图</strong></td>
+<td>适用</td>
+<td>适用</td>
+<td>适用</td>
+</tr>
+<tr>
+<td><strong>带权图</strong></td>
+<td>不适用</td>
+<td>适用</td>
+<td>适用</td>
+</tr>
+<tr>
+<td><strong>带负权值的图</strong></td>
+<td>不适用</td>
+<td>不适用</td>
+<td>适用</td>
+</tr>
+<tr>
+<td><strong>带负权回路的图</strong></td>
+<td>不适用</td>
+<td>不适用</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td><strong>时间复杂度</strong></td>
+<td>$O(V^2) or O(V + E)$</td>
+<td>$O(V^2)$</td>
+<td>$O(V^3)$</td>
+</tr>
+</tbody></table>
+<hr>
+<h4 id="6-4-3-有向无环图描述表达式-得看课"><a href="#6-4-3-有向无环图描述表达式-得看课" class="headerlink" title="&#x3D;&#x3D;6.4.3 有向无环图描述表达式&#x3D;&#x3D;得看课"></a>&#x3D;&#x3D;6.4.3 有向无环图描述表达式&#x3D;&#x3D;得看课</h4><blockquote>
+<p>有向图没有环</p>
+<p>描述公共子式的有效工具</p>
+</blockquote>
+<hr>
+<h4 id="6-4-4-拓扑排序"><a href="#6-4-4-拓扑排序" class="headerlink" title="6.4.4 拓扑排序"></a>6.4.4 拓扑排序</h4><blockquote>
+<p><strong>一些术语</strong></p>
+<p>AOV网（Activity On Vertex Network）</p>
+<p>入度为0开始选择然后拆拆拆</p>
+<p>邻接表 $O(V + E)$或者 邻接矩阵 $O(V^2)$ </p>
+</blockquote>
+<blockquote>
+<p><strong>1. DFS实现这个算法</strong></p>
+<p>检测每次的入度为0可以说明拓扑排序唯一</p>
+<p>邻接矩阵为三角矩阵，则存在拓扑排序，反之不成立</p>
+</blockquote>
+<hr>
+<h4 id="6-4-5-关键路径-细究"><a href="#6-4-5-关键路径-细究" class="headerlink" title="&#x3D;&#x3D;6.4.5 关键路径&#x3D;&#x3D;细究"></a>&#x3D;&#x3D;6.4.5 关键路径&#x3D;&#x3D;细究</h4><blockquote>
+<p>[!tip]</p>
+<p>得细细研究了</p>
+</blockquote>
+<blockquote>
+<p>加快<strong>关键活动</strong>缩短整个工期，但不能任意缩短，一定程度后，可能会变为非关键活动</p>
+<p>关键路径并不唯一</p>
+</blockquote>
+<hr>
+<h4 id="6-4-6-错题"><a href="#6-4-6-错题" class="headerlink" title="6.4.6 错题"></a>6.4.6 错题</h4><p>5，7，8，11，13，14，19，20，21，24，30，33，44，45</p>
+<hr>
+<h2 id="7-查找"><a href="#7-查找" class="headerlink" title="7. 查找"></a>7. 查找</h2><hr>
+<table>
+<thead>
+<tr>
+<th>查找方法</th>
+<th>适用条件</th>
+<th>平均时间复杂度</th>
+<th>最坏时间复杂度</th>
+<th>空间复杂度</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>顺序查找</strong></td>
+<td>无序表</td>
+<td>$(O(n))$</td>
+<td>(O(n))</td>
+<td>(O(1))</td>
+<td>不需要额外空间，简单但效率最低</td>
+</tr>
+<tr>
+<td><strong>折半查找</strong></td>
+<td>有序表</td>
+<td>$(O(\log_2 n))$</td>
+<td>(O(\log_2 n))</td>
+<td>(O(1))</td>
+<td>仅限有序表，性能稳定</td>
+</tr>
+<tr>
+<td><strong>分块查找</strong></td>
+<td>各块有序、块间有序</td>
+<td>$(O(\sqrt{n}))（最优情况）$</td>
+<td>(O(n))</td>
+<td>(O(n))</td>
+<td>增加少量索引，提高查找效率</td>
+</tr>
+<tr>
+<td><strong>哈希查找</strong></td>
+<td>任意表</td>
+<td>$(O(1))（平均）$</td>
+<td>(O(n))（极端冲突）</td>
+<td>(O(n))</td>
+<td>查找最快，但需要额外散列空间</td>
+</tr>
+<tr>
+<td><strong>二叉排序树查找</strong></td>
+<td>动态查找表</td>
+<td>$平均 (O(\log_2 n))$</td>
+<td>(O(n))（退化为链）</td>
+<td>(O(n))</td>
+<td>适合动态插删</td>
+</tr>
+<tr>
+<td><strong>平衡二叉树（AVL）查找</strong></td>
+<td>动态查找表</td>
+<td>$(O(\log_2 n))$</td>
+<td>$(O(\log_2 n))$</td>
+<td>(O(n))</td>
+<td>插删代价较大但查找稳定</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="7-1-查找的基本概念"><a href="#7-1-查找的基本概念" class="headerlink" title="7.1 查找的基本概念"></a>7.1 查找的基本概念</h3><p>1）查找、查找失败</p>
+<p>2）查找表</p>
+<p>3）静态查找表 只查不操作数据</p>
+<p>4）关键字：数据唯一id MySql</p>
+<p>5）平均查找长度 ASL</p>
+<hr>
+<h3 id="7-2-线性查找表：顺序查找表和折半查找"><a href="#7-2-线性查找表：顺序查找表和折半查找" class="headerlink" title="7.2 线性查找表：顺序查找表和折半查找"></a>7.2 线性查找表：顺序查找表和折半查找</h3><h4 id="7-2-1-顺序查找表"><a href="#7-2-1-顺序查找表" class="headerlink" title="7.2.1 顺序查找表"></a>7.2.1 顺序查找表</h4><h4 id="1-一般线性表"><a href="#1-一般线性表" class="headerlink" title="1. 一般线性表"></a>1. 一般线性表</h4><p>1）存储结构：<strong>顺序表 链表 是否有序均可</strong></p>
+<p>2）时空复杂度：时间复杂度 <strong>O(n)</strong> 空间复杂度 <strong>O(1)</strong></p>
+<p>3）ASL：$ASL_{成功} &#x3D; \frac{n+1}{2}$   $ASL_{失败} &#x3D; n+1$  </p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D; <strong>查找判定树</strong></p>
+<h4 id="2-有序线性表"><a href="#2-有序线性表" class="headerlink" title="2. 有序线性表"></a><del>2. 有序线性表</del></h4><p>1）存储结构：<strong>顺序表 链表 是否有序均可</strong></p>
+<p>2）时空复杂度：时间复杂度 <strong>O(n)</strong> 空间复杂度 <strong>O(1)</strong></p>
+<p>3）ASL：$ASL_{成功} &#x3D; \frac{n+1}{2}$   $ASL_{失败} &#x3D; \frac{1+2+3+..n+n}{n+1} &#x3D; \frac{n}{2} + \frac{n}{n+1}$  </p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D; <strong>查找判定树</strong>	</p>
+<hr>
+<h4 id="7-2-2-折半查找-二分"><a href="#7-2-2-折半查找-二分" class="headerlink" title="7.2.2 折半查找 二分"></a>7.2.2 折半查找 二分</h4><p>1）存储结构：<strong>只适合有序顺序表 链表不可以</strong></p>
+<p>2）时空复杂度：时间复杂度 <strong>O(log2n)</strong> 空间复杂度 <strong>O(1)</strong></p>
+<p>3）ASL：$ASL_{成功} &#x3D; 圆形结点平均长度 \log <em>2(n+1) - 1$   $ASL</em>{失败} &#x3D; 方形结点平均长度 \log_2n + 1$  </p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D; </p>
+<p>​	1）查找判定树<strong>右倾</strong>或<strong>左倾</strong> 对应 $\frac{low + high}{2}$ 去上整还是&#x3D;&#x3D;下整&#x3D;&#x3D;</p>
+<p>​	2）$\left\lceil log_n(n+1) \right\rceil$ <strong>树高</strong></p>
+<p>​	3）平衡二叉树</p>
+<p>​	4）查找二叉树不唯一</p>
+<hr>
+<h4 id="7-2-3-分块查找（sign记录，batch块"><a href="#7-2-3-分块查找（sign记录，batch块" class="headerlink" title="7.2.3 分块查找（sign记录，batch块"></a>7.2.3 分块查找（sign记录，batch块</h4><blockquote>
+<p><strong>块内无序，块间无序，也称<u>索引顺序查找</u></strong></p>
+</blockquote>
+<p>1）存储结构：<strong>只适合有序顺序表 链表不可以</strong></p>
+<p>2）时空复杂度：时间复杂度 **O(n) 最好 O($\sqrt{n}$) ** 空间复杂度 <strong>O(n)</strong></p>
+<p>3）ASL：$ASL_{成功} &#x3D; L_1+L_s &#x3D; \frac{b+1}{2} + \frac{s+1}{2}$   查找表为<strong>b块 每个s记录</strong> </p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D;</p>
+<p>​	1）空间换时间</p>
+<p>​	2）$s &#x3D; \sqrt{n} \ \Rightarrow \ ASL_{min} &#x3D; \sqrt{n} + 1$  </p>
+<p>​	3)</p>
+<h4 id="7-2-4-错题"><a href="#7-2-4-错题" class="headerlink" title="7.2.4 错题"></a>7.2.4 错题</h4><p>5，8，13，15，16</p>
+<hr>
+<h3 id="7-3-树形查找"><a href="#7-3-树形查找" class="headerlink" title="7.3 树形查找"></a>7.3 树形查找</h3><h4 id="7-3-1-二叉排序树-BST"><a href="#7-3-1-二叉排序树-BST" class="headerlink" title="7.3.1 二叉排序树 BST"></a>7.3.1 二叉排序树 BST</h4><blockquote>
+<p><strong>左 &lt; 根 &lt; 右</strong> Binary Sort Tree</p>
+</blockquote>
+<p>1）存储结构：<strong>动态查找表适合BST，如果静态选择二分</strong></p>
+<p>2）时空复杂度：时间复杂度 **O(log2n) ** 空间复杂度 <strong>O(n)</strong></p>
+<p>3）ASL：$ASL_{成功} &#x3D; L_1+L_s &#x3D; \frac{b+1}{2} + \frac{s+1}{2}$   查找表为<strong>b块 每个s记录</strong> </p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D; </p>
+<p>​	1）<strong>中序遍历</strong>则升序排列</p>
+<p>​	2）二叉排序树的<strong>删除</strong></p>
+<p>​		-1. <strong>叶子</strong>直接删</p>
+<p>​		-2 只有一棵子树 直接并上来</p>
+<p>​		-3 左右子树均有 <strong>则中序遍历的直接后继 或 直接前驱直接替代</strong></p>
+<p>​	3）<strong>查找判定树唯一</strong></p>
+<p>​	4）最小高度 $\left\lceil log_n(n+1) \right\rceil$ 或 $h &#x3D; \left\lfloor \log_2 (n + 1) \right\rfloor$</p>
+<hr>
+<h4 id="7-3-2-平衡二叉树-AVL"><a href="#7-3-2-平衡二叉树-AVL" class="headerlink" title="&#x3D;&#x3D;7.3.2 平衡二叉树 AVL&#x3D;&#x3D;"></a>&#x3D;&#x3D;7.3.2 平衡二叉树 AVL&#x3D;&#x3D;</h4><p>1）存储结构：<strong>动态查找表适合BST，如果静态选择二分</strong></p>
+<p>2）时空复杂度：时间复杂度 **O(log2n) ** 空间复杂度 <strong>O(n)</strong></p>
+<p>3）ASL：</p>
+<p>4）优缺点</p>
+<p>5）&#x3D;&#x3D;特点&#x3D;&#x3D; </p>
+<p>​	1）&#x3D;&#x3D;插入 LL RR LR RL&#x3D;&#x3D;</p>
+<p>​	2）&#x3D;&#x3D;删除 <strong>crux</strong>&#x3D;&#x3D;寻找<strong>最小不平衡子树</strong> &#x3D;&#x3D;<strong>持续性搂住到底</strong>&#x3D;&#x3D;的LLRRLRRL</p>
+<p>​		-1. 用二叉排序树的方式删除</p>
+<p>​		-2. 找最小不平衡子树然后开始操作</p>
+<p>​		-3. 向上回溯直到调整至平衡</p>
+<p>​	3）树高为 $h$ 的 AVL <strong>最少结点</strong>递推公式</p>
+<p>​		$n_0&#x3D;0,n_1&#x3D;1,n_2 &#x3D;2, n_h &#x3D; n_{h-1} + n_{h-2} + 1$</p>
+<p>​		<strong>最多</strong>为满叉及 $2^h-1$</p>
+<hr>
+<h4 id="7-3-4-错题"><a href="#7-3-4-错题" class="headerlink" title="7.3.4 错题"></a>7.3.4 错题</h4><p>6，9，12，15，26</p>
+<hr>
+<h3 id="7-4-B树和B-树"><a href="#7-4-B树和B-树" class="headerlink" title="7.4 B树和B+树"></a>7.4 B树和B+树</h3><blockquote>
+<p><strong>平衡因子均为 0 又称m路平衡查找树</strong></p>
+</blockquote>
+<h4 id="7-4-1-基本操作"><a href="#7-4-1-基本操作" class="headerlink" title="7.4.1 基本操作"></a>7.4.1 基本操作</h4><h5 id="1-基本定义-对于m阶B树与查找（随便找）"><a href="#1-基本定义-对于m阶B树与查找（随便找）" class="headerlink" title="1. 基本定义-对于m阶B树与查找（随便找）"></a>1. 基本定义-对于m阶B树与查找（随便找）</h5><p>（1）每个结点最多m棵子树，最多<strong>m-1</strong>个关键字</p>
+<p>（2）根结点不是叶结点，至少两棵子树，至少有一个关键字</p>
+<p>（3）除根结点外的其他结点&#x3D;&#x3D;<strong>至少有 $\left\lceil m&#x2F;2 \right\rceil$ 棵子树</strong>&#x3D;&#x3D;，最少$\left\lceil m&#x2F;2 \right\rceil - 1$ 个关键字最多 $m - 1$</p>
+<p>（4）所有叶结点（外部结点）都在同一层次上，不计入高度，查找失败的结点</p>
+<hr>
+<h5 id="2-B树高度"><a href="#2-B树高度" class="headerlink" title="2. B树高度"></a>2. B树高度</h5><p>（0）关键字+1为外部结点个数也就是叶节点</p>
+<p>（1）每个结点的关键字<strong>个数最多</strong>，则容纳同样多的关键字的B树高度达到最小。</p>
+<p>​	因此 $h \ge log_m(n+1)$ 等比数列求和</p>
+<p>（2）每个结点最少此时高度最大</p>
+<p>​	可以反推，查找不成功的叶结点有 $n+ 1$ 个 $n + 1\ge2(\left\lceil m&#x2F;2 \right\rceil)^{h-1}$</p>
+<p>​	即可推出树高</p>
+<h5 id="3-B树插入"><a href="#3-B树插入" class="headerlink" title="3. &#x3D;&#x3D;B树插入&#x3D;&#x3D;"></a>3. &#x3D;&#x3D;B树插入&#x3D;&#x3D;</h5><p>得分裂就完了</p>
+<p>插入新的都是先到终端节点</p>
+<h5 id="4-B树删除"><a href="#4-B树删除" class="headerlink" title="4. &#x3D;&#x3D;B树删除&#x3D;&#x3D;"></a>4. &#x3D;&#x3D;B树删除&#x3D;&#x3D;</h5><p>1）直接删除没啥事的话</p>
+<p>2）兄弟够借</p>
+<ul>
+<li>左兄弟，前驱的前驱</li>
+<li>右兄弟，后继的后继</li>
+</ul>
+<p>3）兄弟不够借的话合成大西瓜</p>
+<h4 id="7-4-2-B-树"><a href="#7-4-2-B-树" class="headerlink" title="7.4.2 B+树"></a>7.4.2 B+树</h4><blockquote>
+<p><strong>直接连接没有左右孩子 链表结构</strong></p>
+</blockquote>
+<p>**特性：**对于 m 阶B+树</p>
+<p>1）每个分枝结点做多m棵子树</p>
+<p>2）子树最少同B树</p>
+<p>3）&#x3D;&#x3D;结点的子树个数与关键字个数相等&#x3D;&#x3D;</p>
+<p>4）<strong>所有叶结点包括相应记录，也就是才能找到信息，必须遍历到叶结点</strong>，可重复出现可爱胖豆结点</p>
+<p>​	相邻叶结点作链表连接起来，<strong>也就是可以顺序查找</strong></p>
+<p>5）所有分枝结点仅包含它的各个子结点中关键字的最大值及其子结点的指针（<strong>不保存信息</strong>）</p>
+<p><strong>差异：</strong></p>
+<p>如上</p>
+<p>- </p>
+<h4 id="7-4-3-错题"><a href="#7-4-3-错题" class="headerlink" title="7.4.3 错题"></a>7.4.3 错题</h4><p>1，3，6，7，10，11，12，19，24</p>
+<hr>
+<h3 id="7-5-散列表"><a href="#7-5-散列表" class="headerlink" title="7.5 散列表"></a>7.5 散列表</h3><h4 id="7-5-1"><a href="#7-5-1" class="headerlink" title="7.5.1"></a>7.5.1</h4><blockquote>
+<p><strong>Hash表 哈希表</strong>，&#x3D;&#x3D;<strong>不需要一直比较</strong>&#x3D;&#x3D;，前面的小卡拉米才需要</p>
+<p>用哈希函数来存映射关系</p>
+</blockquote>
+<h4 id="7-5-2-散列函数构造方法"><a href="#7-5-2-散列函数构造方法" class="headerlink" title="7.5.2 散列函数构造方法"></a>7.5.2 散列函数构造方法</h4><blockquote>
+<p><strong>函数选择：</strong></p>
+<p>1）定义域包含 <strong>全部关键字</strong>，值域散列表大小</p>
+<p>2）地址应尽量 <strong>均匀分布整个地址空间</strong>，尽可能减少冲突</p>
+<p>3）三裂函数应该<strong>简单</strong> <strong>减少计算时间 关键字对应的散列地址</strong></p>
+</blockquote>
+<h5 id="1-直接定址法（关键字基本连续，线性的）"><a href="#1-直接定址法（关键字基本连续，线性的）" class="headerlink" title="1. 直接定址法（关键字基本连续，线性的）"></a>1. 直接定址法（关键字基本连续，线性的）</h5><blockquote>
+<p>$H(key) &#x3D; key$  <strong>or</strong> $a * key + b$</p>
+</blockquote>
+<h5 id="2-除留余数法-（通用：除数选择大于表长的最大质数）"><a href="#2-除留余数法-（通用：除数选择大于表长的最大质数）" class="headerlink" title="2. &#x3D;&#x3D;除留余数法&#x3D;&#x3D;（通用：除数选择大于表长的最大质数）"></a>2. &#x3D;&#x3D;除留余数法&#x3D;&#x3D;（通用：除数选择大于表长的最大质数）</h5><blockquote>
+<p>$H(key) &#x3D; key \ % \ p$</p>
+</blockquote>
+<h5 id="3-数字分析法（关键字集合已知，且关键字的某几个数分布均匀，如电话号码）"><a href="#3-数字分析法（关键字集合已知，且关键字的某几个数分布均匀，如电话号码）" class="headerlink" title="3. 数字分析法（关键字集合已知，且关键字的某几个数分布均匀，如电话号码）"></a>3. 数字分析法（关键字集合已知，且关键字的某几个数分布均匀，如电话号码）</h5><p>如电话号码</p>
+<h5 id="4-平方取中法（关键字的每位取值都不够均匀）"><a href="#4-平方取中法（关键字的每位取值都不够均匀）" class="headerlink" title="4. 平方取中法（关键字的每位取值都不够均匀）"></a>4. 平方取中法（关键字的每位取值都不够均匀）</h5><p>给关键字平方后选取其中几位</p>
+<h4 id="7-5-3-处理冲突的办法"><a href="#7-5-3-处理冲突的办法" class="headerlink" title="7.5.3 处理冲突的办法"></a>7.5.3 处理冲突的办法</h4><h5 id="1-开放定址法-关键是选择-d-i"><a href="#1-开放定址法-关键是选择-d-i" class="headerlink" title="1. 开放定址法 关键是选择 $d_i$"></a>1. 开放定址法 关键是选择 $d_i$</h5><p>$H_i &#x3D; (H(key) + d_i) %m$ m为散列表表长</p>
+<p>1）线性探测法</p>
+<blockquote>
+<p>$d_i &#x3D; 1,2,3,…$</p>
+</blockquote>
+<p>2）平方探测法</p>
+<blockquote>
+<p>$d_i &#x3D; 1^2,-1^2,2^2,-2^2,3^3……$ &#x3D;&#x3D;正负交替&#x3D;&#x3D;</p>
+</blockquote>
+<p>3）双散列法</p>
+<blockquote>
+<p>$H_i &#x3D; (H(key) + i <em>Hash_2(key)) %m$  $d_i &#x3D;i</em>Hash_2$</p>
+</blockquote>
+<p>4）伪随机数列法</p>
+<blockquote>
+<p>$人为选取d_i$</p>
+</blockquote>
+<h5 id="2-拉链法（连接法，chaining）默认头插"><a href="#2-拉链法（连接法，chaining）默认头插" class="headerlink" title="2. 拉链法（连接法，chaining）默认头插"></a>2. 拉链法（连接法，chaining）默认头插</h5><h4 id="7-5-4-性能分析"><a href="#7-5-4-性能分析" class="headerlink" title="&#x3D;&#x3D;7.5.4 性能分析&#x3D;&#x3D;"></a>&#x3D;&#x3D;7.5.4 性能分析&#x3D;&#x3D;</h4><h5 id="1-ASL"><a href="#1-ASL" class="headerlink" title="1. ASL"></a>1. ASL</h5><h5 id="2-影响查找效率三个因素：散列函数，处理冲突办法，装填因子"><a href="#2-影响查找效率三个因素：散列函数，处理冲突办法，装填因子" class="headerlink" title="2. 影响查找效率三个因素：散列函数，处理冲突办法，装填因子"></a>2. 影响查找效率三个因素：散列函数，处理冲突办法，装填因子</h5><p>$\alpha &#x3D; \frac{表中记录数n}{散列表长度m}$</p>
+<p>越满越容易冲突，反之越不容易</p>
+<h4 id="7-5-5-错题"><a href="#7-5-5-错题" class="headerlink" title="7.5.5 错题"></a>7.5.5 错题</h4><p>1，2，4，5，6，7，13，21，23</p>
+<hr>
+<h2 id="8-排序"><a href="#8-排序" class="headerlink" title="8. 排序"></a>8. 排序</h2><h3 id="8-1-排序定义-关键词"><a href="#8-1-排序定义-关键词" class="headerlink" title="8.1 排序定义 关键词"></a>8.1 排序定义 关键词</h3><blockquote>
+<p><strong>稳定性</strong></p>
+</blockquote>
+<hr>
+<h3 id="8-2-插入排序"><a href="#8-2-插入排序" class="headerlink" title="8.2 插入排序"></a>8.2 插入排序</h3><blockquote>
+<p><strong>每次将一个待排序的记录 按其关键字大小 排序到前面已经排好序的序列中</strong></p>
+</blockquote>
+<h4 id="8-2-1-直接插入排序"><a href="#8-2-1-直接插入排序" class="headerlink" title="8.2.1 直接插入排序"></a>8.2.1 直接插入排序</h4><blockquote>
+<p><strong>适合基本有序</strong></p>
+<p>正序 比较次数 $n - 1$，移动次数为0，<br>逆序 比较次数 $\sum <em>{i&#x3D;2}^ni$ 移动次数 $\sum</em>{i&#x3D;2}^n(i+1)$</p>
+</blockquote>
+<blockquote>
+<p>[!tip]</p>
+<p>稳定！<strong>但依赖排序表的初始顺序</strong></p>
+</blockquote>
+<ol>
+<li><strong>存储结构：</strong><u>顺序存储</u> 或 <u>链式存储</u>的<strong>线性表</strong></li>
+<li><strong>空间复杂度：</strong>$O(1)$</li>
+<li>**时间复杂度：**最好：$O(n)$ 最坏 $O(n^2)$ 平均 $O(n^2)$</li>
+<li><strong>特点：</strong></li>
+</ol>
+<hr>
+<h4 id="8-2-2-折半插入排序"><a href="#8-2-2-折半插入排序" class="headerlink" title="8.2.2 折半插入排序"></a><del>8.2.2 折半插入排序</del></h4><blockquote>
+<p>[!tip]</p>
+<p>稳定！<strong>用二分查找来缩短插入到已排序好的序列中的位置</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>存储结构：</strong>&#x3D;&#x3D;仅&#x3D;&#x3D; <u>顺序存储</u>的<strong>线性表</strong></p>
+</li>
+<li><p><strong>空间复杂度：</strong>$O(1)$</p>
+</li>
+<li><p>**时间复杂度：**最好：$O(n)$ 最坏 $O(n^2)$ 平均 $O(n^2)$</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<p>​    -&gt; 仅减少了<strong>比较次数</strong> ，并没有减少<strong>移动次数</strong></p>
+<p>​    -&gt; <strong>比较次数</strong>与待排序表的初始状态无关，仅取决于元素格式</p>
+<p>​    -&gt; 但<strong>移动次数</strong>仍然依赖于表的初始状态</p>
+</li>
+</ol>
+<hr>
+<h4 id="8-2-3-希尔排序"><a href="#8-2-3-希尔排序" class="headerlink" title="8.2.3 希尔排序"></a>8.2.3 希尔排序</h4><blockquote>
+<p>[!caution]</p>
+<p>不稳定！</p>
+</blockquote>
+<blockquote>
+<p><strong>算法步骤</strong></p>
+<ol>
+<li>分成若干个字表对字表进行直接插入排序</li>
+<li>基本有序时，再对全体记录来一次插入排序</li>
+</ol>
+</blockquote>
+<ol>
+<li><strong>存储结构：</strong>&#x3D;&#x3D;仅&#x3D;&#x3D; <u>顺序存储</u>的<strong>线性表</strong></li>
+<li><strong>空间复杂度：</strong>$O(1)$</li>
+<li><strong>时间复杂度</strong>：n在某个特定范围 $O(n^1.3)$ 最坏 $O(n^2)$ 平均 $O(n^2)$ </li>
+<li><strong>特点：</strong></li>
+</ol>
+<hr>
+<h4 id="8-2-4-错题"><a href="#8-2-4-错题" class="headerlink" title="8.2.4 错题"></a>8.2.4 错题</h4><p>1，10，12</p>
+<hr>
+<h3 id="8-3-交换排序"><a href="#8-3-交换排序" class="headerlink" title="8.3 交换排序"></a>8.3 交换排序</h3><blockquote>
+<p>是根据序列中两个元素关键字的比较结果来&#x3D;&#x3D;<strong>对换</strong>&#x3D;&#x3D;这两个记录中的位置</p>
+</blockquote>
+<h4 id="8-3-1-冒泡排序-起泡排序"><a href="#8-3-1-冒泡排序-起泡排序" class="headerlink" title="8.3.1 冒泡排序 起泡排序"></a>8.3.1 冒泡排序 起泡排序</h4><blockquote>
+<p>正序 比较次数为 n - 1， 移动次数为0，</p>
+<p>逆序 比较次数 $\sum_{i&#x3D;1}^{n-1}(n-i)$, 移动次数 $3\sum_{i &#x3D; 1}^{n-1}(n-1)$</p>
+</blockquote>
+<blockquote>
+<p>[!tip]</p>
+<p>稳定！<strong>每次冒到<code>末尾</code>最大</strong>可以加个 <strong>bound &#x3D; pos，来提速</strong></p>
+</blockquote>
+<ol>
+<li><p><strong>存储结构：</strong><u>顺序存储</u>和<u>链式存储</u>的<strong>线性表</strong></p>
+</li>
+<li><p><strong>空间复杂度：</strong>$O(1)$</p>
+</li>
+<li><p>**时间复杂度：**最好：$O(n)$ 最坏 $O(n^2)$ 平均 $O(n^2)$</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<p>​        -&gt; 最坏情况下的 <strong>比较次数</strong> $\frac{n(n - 1)}{2}$ 和<strong>移动次数</strong> $\frac{3n(n-1)}{2}$</p>
+</li>
+</ol>
+<hr>
+<h4 id="8-3-2-快速排序"><a href="#8-3-2-快速排序" class="headerlink" title="8.3.2 快速排序"></a>8.3.2 快速排序</h4><blockquote>
+<p>[!caution]</p>
+<p>不稳定！</p>
+</blockquote>
+<blockquote>
+<p>选取<strong>pivot</strong>作为<strong>枢纽</strong>，然后划分为左右两部分，直到划分到只剩一个</p>
+<p><strong>pivot</strong>可选择首个</p>
+</blockquote>
+<ol>
+<li><strong>存储结构：</strong>&#x3D;&#x3D;仅&#x3D;&#x3D; <u>顺序存储</u>的<strong>线性表</strong></li>
+<li>**空间复杂度：**最好：平衡二叉树树高 $O(\log_{2} n)$ 链表$n-1$ 次 $O(n^2)$ 平均 $O(\log_{2} n)$</li>
+<li>**时间复杂度：**最坏 $O(n^2)$ 理想状态 $O(n \log_2 n)$</li>
+<li><strong>特点：</strong></li>
+</ol>
+<hr>
+<h4 id="8-3-3-错题"><a href="#8-3-3-错题" class="headerlink" title="8.3.3 错题"></a>8.3.3 错题</h4><p>9，10，18</p>
+<hr>
+<h3 id="8-4-选择排序"><a href="#8-4-选择排序" class="headerlink" title="8.4 选择排序"></a>8.4 选择排序</h3><blockquote>
+<p>每一趟在待排序元素中选取关键字最小的元素，作为有序子序列第i哥元素，直到 &#x3D;&#x3D;n- 1&#x3D;&#x3D; 趟，游戏结束</p>
+</blockquote>
+<h4 id="8-4-1-简单选择排序"><a href="#8-4-1-简单选择排序" class="headerlink" title="8.4.1 简单选择排序"></a>8.4.1 简单选择排序</h4><blockquote>
+<p><strong>移动次数最少</strong><br>正序 比较次数为 $\sum_{i&#x3D;1}^{n-1}(n-i)$ 移动次数为 0</p>
+<p>逆序 比较次数为 $\sum_{i&#x3D;1}^{n-1}(n-i)$ 移动次数为 $3(n-1)&#x2F;2$</p>
+</blockquote>
+<blockquote>
+<p>[!caution]</p>
+<p>不稳定！</p>
+</blockquote>
+<ol>
+<li><strong>存储结构：</strong><u>顺序存储</u>和<u>链式存储</u>的<strong>线性表</strong></li>
+<li><strong>空间复杂度：</strong>$O(1)$</li>
+<li><strong>时间复杂度：</strong> 固定节目 $O(n^2)$，移动次数少不会超过 $3(n-1)$ 但比较次数始终是 $\frac{n(n-1)}{2}$ </li>
+<li><strong>特点：</strong></li>
+</ol>
+<hr>
+<h4 id="8-4-2-堆排序"><a href="#8-4-2-堆排序" class="headerlink" title="8.4.2 堆排序"></a>8.4.2 堆排序</h4><blockquote>
+<p>[!caution]</p>
+<p>不稳定！</p>
+</blockquote>
+<ol>
+<li><p><strong>存储结构：</strong>&#x3D;&#x3D;仅&#x3D;&#x3D; <u>顺序存储</u><strong>线性表</strong></p>
+</li>
+<li><p><strong>空间复杂度：</strong>$O(1)$</p>
+</li>
+<li><p><strong>时间复杂度：</strong> 建堆 $O(n)\ \ n - 1$ 次调整每次最多 $O(h)$ 所以最后 $O(n \log n)$</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<ol>
+<li><p>一棵完全二叉树， 大根堆根结点最大，小根堆根结点最小</p>
+</li>
+<li><p><strong>建堆</strong>：以大根堆为例，1️⃣从最后一个双亲结点开始遍历也就是 $\left\lfloor \frac{n}{2} \right\rfloor$往前遍历$\left\lfloor \frac{n}{2} \right\rfloor$- 1</p>
+<p>​                               2️⃣左右比较交换到当前根使之最大</p>
+<p>​                               3️⃣交换的另一个需要考虑**“沉底”**</p>
+<p>建堆时间与树高有关，$O(h)$ 总比较次数不超过 $4n$ 时间复杂度为 $O(n)$</p>
+</li>
+<li><p><strong>堆排序：<strong>最后结点与根结点交换，然后根结点</strong>沉底</strong>就行</p>
+</li>
+</ol>
+</li>
+</ol>
+<hr>
+<h4 id="8-4-3-错题"><a href="#8-4-3-错题" class="headerlink" title="8.4.3 错题"></a>8.4.3 错题</h4><p>2，5，6，7，11，19，21</p>
+<hr>
+<h3 id="8-5-归并排序、基数排序、计数排序"><a href="#8-5-归并排序、基数排序、计数排序" class="headerlink" title="8.5 归并排序、基数排序、计数排序"></a>8.5 归并排序、基数排序、计数排序</h3><blockquote>
+<p>哥三和上面的排序想法不太一样</p>
+</blockquote>
+<h4 id="8-5-1-归并排序"><a href="#8-5-1-归并排序" class="headerlink" title="8.5.1 归并排序"></a>8.5.1 归并排序</h4><blockquote>
+<p>[!tip]</p>
+<p>**分治！**稳定！</p>
+</blockquote>
+<blockquote>
+<p><strong>Merge()很重要</strong> 先将含有n个的待排序表分成含 <strong>n&#x2F;2</strong> 子表，采用二路归并算法对两个字表递归地进行排序</p>
+</blockquote>
+<ol>
+<li><p><strong>存储结构：</strong><u>顺序存储</u>和<u>链式存储</u>的<strong>线性表</strong></p>
+</li>
+<li><p><strong>空间复杂度：</strong>$O(n)$</p>
+</li>
+<li><p><strong>时间复杂度：</strong> $每趟为 \ log_2n \ 一共为\ O(n\log n)$</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<p>​        $\left\lceil \frac{n}{2h} \right\rceil$ 次 <strong>Merge()</strong> 需要 $\left\lceil log_2n \right\rceil$ 趟</p>
+</li>
+</ol>
+<hr>
+<h4 id="8-5-2-基数排序"><a href="#8-5-2-基数排序" class="headerlink" title="8.5.2 基数排序"></a>8.5.2 基数排序</h4><blockquote>
+<p>[!tip]</p>
+<p>**不基于比较和移动！**稳定！</p>
+</blockquote>
+<blockquote>
+<p>以 <strong>r</strong> 为基数则 &#x3D;&#x3D;使用 <strong>r</strong> 个队列&#x3D;&#x3D;  MSD 和 LSD </p>
+</blockquote>
+<ol>
+<li><strong>存储结构：</strong><u>顺序存储</u>和<u>链式存储</u>的<strong>线性表</strong></li>
+<li><strong>空间复杂度：</strong>$O(r)$</li>
+<li><strong>时间复杂度：</strong> $O(d(n+r))$ 一趟遍历一遍n个数字同时合并r个队列 d趟</li>
+<li><strong>特点：</strong></li>
+</ol>
+<hr>
+<h4 id="8-5-3-计数排序"><a href="#8-5-3-计数排序" class="headerlink" title="&#x3D;&#x3D;8.5.3 计数排序&#x3D;&#x3D;"></a>&#x3D;&#x3D;8.5.3 计数排序&#x3D;&#x3D;</h4><blockquote>
+<p>[!tip]</p>
+<p>**拿信息的胖豆！**稳定！</p>
+</blockquote>
+<blockquote>
+<p><strong>整型变量存储</strong> 范围 [0, k) <strong>从后往前保证稳定</strong> 为了找到小与某个的值的个数数组B，最终敲定位置C</p>
+</blockquote>
+<ol>
+<li><p><strong>存储结构：<strong>更适合<u>顺序存储</u>和<u>链式存储</u>的</strong>线性表</strong></p>
+</li>
+<li><p><strong>空间复杂度：</strong>$O(n + k)$ n 来自计数数组 B，k 来自 辅助数组C</p>
+</li>
+<li><p><strong>时间复杂度：</strong> $O(n + k)$</p>
+</li>
+<li><p><strong>特点：</strong></p>
+<p>​        -&gt; k &#x3D; O(n) 时，这东西比比较的排序快排, 堆排序快</p>
+<p>​            k &gt; $O(n \log_2n)$ 那就太逊了</p>
+</li>
+</ol>
+<hr>
+<h4 id="8-5-4-错题"><a href="#8-5-4-错题" class="headerlink" title="8.5.4 错题"></a>8.5.4 错题</h4><p>3，8，11，18</p>
+<hr>
+<h3 id="8-6-原神玩家大杂烩"><a href="#8-6-原神玩家大杂烩" class="headerlink" title="8.6 原神玩家大杂烩"></a>8.6 原神玩家大杂烩</h3><h4 id="8-6-1-内部排序算法的比较"><a href="#8-6-1-内部排序算法的比较" class="headerlink" title="8.6.1 内部排序算法的比较"></a>8.6.1 内部排序算法的比较</h4><hr>
+<h4 id="8-6-2-内部排序算法的应用"><a href="#8-6-2-内部排序算法的应用" class="headerlink" title="8.6.2 内部排序算法的应用"></a>8.6.2 内部排序算法的应用</h4><hr>
+<h4 id="8-6-3-错题"><a href="#8-6-3-错题" class="headerlink" title="8.6.3 错题"></a>8.6.3 错题</h4><p>3，4，6，8，9，12，14，15，</p>
+<hr>
+<h3 id="8-7-拓展：桶排序考纲"><a href="#8-7-拓展：桶排序考纲" class="headerlink" title="8.7 拓展：桶排序考纲"></a>8.7 拓展：桶排序考纲</h3></article>
+<div class="article-footer">
+    <section id="license">
+      <div class="header"><span>License</span></div>
+      <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div>
+    </section>
+    
+
+</div>
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">Older</div><a href="/2026/01/03/hello-world/">Paodou</a></div></section></div>
+
+
+
+
+
+
+<footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">Ju Jiu</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1">Stellar 1.33.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%8E%8B%E9%81%93%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-text">王道数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-text">目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%BB%AA%E8%AE%BA"><span class="toc-text">1. 绪论</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">1.1 数据结构基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E6%9C%AF%E8%AF%AD"><span class="toc-text">1.1.1 基本概念和术语</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%89%E8%A6%81%E7%B4%A0"><span class="toc-text">1.1.2 数据结构三要素</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3-%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90"><span class="toc-text">1.1.3 错题分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E7%AE%97%E6%B3%95%E5%92%8C%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7"><span class="toc-text">1.2 算法和算法评价</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-1-%E7%AE%97%E6%B3%95%E5%92%8C%E7%AE%97%E6%B3%95%E8%AF%84%E4%BB%B7"><span class="toc-text">1.2.1 算法和算法评价</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-2-%E7%AE%97%E6%B3%95%E6%95%88%E7%8E%87%E7%9A%84%E5%BA%A6%E9%87%8F"><span class="toc-text">1.2.2 算法效率的度量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-3-%E9%94%99%E9%A2%98"><span class="toc-text">1.2.3 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-text">2. 线性表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">2.1 线性表的定义和基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">2.1.1 线性表的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-2-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">2.1.2 线性表的基本操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-3-%E9%94%99%E9%A2%98%E5%88%86%E6%9E%90"><span class="toc-text">2.1.3  错题分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%A4%BA"><span class="toc-text">2.2 线性表的顺序表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-1-%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">2.2.1 顺序表的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-2-%E9%A1%BA%E5%BA%8F%E8%A1%A8%E4%B8%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">2.2.2 顺序表上基本操作的实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-2-3-%E9%94%99%E9%A2%98"><span class="toc-text">2.2.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-%E7%BA%BF%E6%80%A7%E8%A1%A8%E7%9A%84%E9%93%BE%E5%BC%8F%E8%A1%A8%E7%A4%BA"><span class="toc-text">2.3 线性表的链式表示</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-1-%E5%8D%95%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">2.3.1 单链表的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-2-%E5%8D%95%E9%93%BE%E8%A1%A8%E4%B8%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-text">2.3.2 单链表上基本操作的实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-3-%E5%8F%8C%E9%93%BE%E8%A1%A8"><span class="toc-text">2.3.3 双链表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-4-%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8"><span class="toc-text">2.3.4 循环链表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-5-%E9%9D%99%E6%80%81%E9%93%BE%E8%A1%A8"><span class="toc-text">2.3.5 静态链表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-6-%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%92%8C%E9%93%BE%E8%A1%A8%E7%9A%84%E6%AF%94%E8%BE%83"><span class="toc-text">2.3.6 顺序表和链表的比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-3-7-%E9%94%99%E9%A2%98"><span class="toc-text">2.3.7 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E6%A0%88-%E9%98%9F%E5%88%97-%E6%95%B0%E7%BB%84"><span class="toc-text">3. 栈 队列 数组</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E6%A0%881"><span class="toc-text">3.1 栈1</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-1-%E6%A0%88%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">3.1.1 栈的基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-2-%E6%A0%88%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">3.1.2 栈的顺序存储结构</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-3-%E6%A0%88%E7%9A%84%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">3.1.3 栈的链式存储结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-1-4-%E9%94%99%E9%A2%98"><span class="toc-text">3.1.4 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E9%98%9F%E5%88%97"><span class="toc-text">3.2 队列</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-1-%E9%98%9F%E5%88%97%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">3.2.1 队列的基本概念</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-2-%E9%98%9F%E5%88%97%E7%9A%84%E9%A1%BA%E5%BA%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">3.2.2 队列的顺序存储结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-3-%E9%98%9F%E5%88%97%E7%9A%84%E9%93%BE%E5%BC%8F%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">3.2.3 队列的链式存储结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-4-%E5%8F%8C%E7%AB%AF%E9%98%9F%E5%88%97"><span class="toc-text">3.2.4 双端队列</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-5-%E9%94%99%E9%A2%98"><span class="toc-text">3.2.5 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E6%A0%88%E5%92%8C%E9%98%9F%E5%88%97%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3 栈和队列的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-1-%E6%A0%88-%E5%9C%A8%E6%8B%AC%E5%8F%B7%E5%8C%B9%E9%85%8D%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3.1 &#x3D;&#x3D;栈&#x3D;&#x3D;在括号匹配中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-2-%E6%A0%88-%E5%9C%A8%E8%A1%A8%E8%BE%BE%E5%BC%8F%E6%B1%82%E5%80%BC%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3.2 &#x3D;&#x3D;栈&#x3D;&#x3D;在表达式求值中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-3-%E6%A0%88-%E5%9C%A8%E9%80%92%E5%BD%92%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3.3 &#x3D;&#x3D;栈&#x3D;&#x3D;在递归中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-4-%E9%98%9F%E5%88%97%E5%9C%A8%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3.4 队列在层次遍历中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-5-%E9%98%9F%E5%88%97-%E5%9C%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">3.3.5 队列 在计算机系统中的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-6-%E9%94%99%E9%A2%98"><span class="toc-text">3.3.6 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E6%95%B0%E7%BB%84%E5%92%8C%E7%89%B9%E6%AE%8A%E7%9F%A9%E9%98%B5"><span class="toc-text">3.4 数组和特殊矩阵</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-1-%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">3.4.1 数组的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-2-%E6%95%B0%E7%BB%84%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">3.4.2 数组的存储结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-3-%E7%89%B9%E6%AE%8A%E7%9F%A9%E9%98%B5%E7%9A%84%E5%8E%8B%E7%BC%A9%E5%AD%98%E5%82%A8"><span class="toc-text">3.4.3 特殊矩阵的压缩存储</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-4-%E7%A8%80%E7%96%8F%E7%9F%A9%E9%98%B5"><span class="toc-text">3.4.4 稀疏矩阵</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-5-%E9%94%99%E9%A2%98"><span class="toc-text">3.4.5 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%B8%B2"><span class="toc-text">4. 串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E4%B8%B2%E7%9A%84%E5%AE%9A%E4%B9%89%E5%92%8C%E5%AE%9E%E7%8E%B0"><span class="toc-text">4.1 串的定义和实现</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-1-%E4%B8%B2%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">4.1.1 串的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-2-%E4%B8%B2%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">4.1.2 串的基本操作</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E4%B8%B2%E7%9A%84%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D"><span class="toc-text">4.2 串的模式匹配</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-1-%E7%AE%80%E5%8D%95%E7%9A%84%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%EF%BC%88%E6%9C%B4%E7%B4%A0%E6%A8%A1%E5%BC%8F%E5%8C%B9%E9%85%8D%E7%AE%97%E6%B3%95%EF%BC%89"><span class="toc-text">4.2.1 简单的模式匹配算法（朴素模式匹配算法）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-2-KMP"><span class="toc-text">4.2.2 KMP</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-3-KMP%E7%AE%97%E6%B3%95%E7%9A%84%E6%94%B9%E8%BF%9B"><span class="toc-text">4.2.3 KMP算法的改进</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-4-%E9%94%99%E9%A2%98"><span class="toc-text">4.2.4 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">5. 树与二叉树</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-%E6%A0%91%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">5.1 树的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-1-%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">5.1.1 树的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-2-%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="toc-text">5.1.2 基本术语</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-3-%E6%A0%91%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="toc-text">5.1.3 树的性质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-1-4-%E9%94%99%E9%A2%98"><span class="toc-text">5.1.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%A6%82%E5%BF%B5"><span class="toc-text">5.2 二叉树的概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AE%9A%E4%B9%89%E5%8F%8A%E5%85%B6%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7"><span class="toc-text">5.2.1 二叉树的定义及其主要特性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-2-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%AD%98%E5%82%A8%E7%BB%93%E6%9E%84"><span class="toc-text">5.2.2 二叉树的存储结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-2-3-%E9%94%99%E9%A2%98"><span class="toc-text">5.2.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-3-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86%E5%92%8C%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">5.3 二叉树的遍历和线索二叉树</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-1-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-text">5.3.1 二叉树的遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-2-%E7%BA%BF%E7%B4%A2%E4%BA%8C%E5%8F%89%E6%A0%91"><span class="toc-text">5.3.2 线索二叉树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-3-3-%E9%94%99%E9%A2%98"><span class="toc-text">5.3.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-4-%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97"><span class="toc-text">5.4 树、森林</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-1-%E6%A0%91%E7%9A%84%E5%AD%98%E5%82%A8%E6%9C%BA%E6%9E%84"><span class="toc-text">5.4.1 树的存储机构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-2-%E6%A0%91%E3%80%81%E6%A3%AE%E6%9E%97%E5%92%8C%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">5.4.2 树、森林和二叉树的转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-3-%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-text">5.4.3 树和森林的遍历</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-4-4-%E9%94%99%E9%A2%98"><span class="toc-text">5.4.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-5-%E6%A0%91%E4%B8%8E%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">5.5 树与二叉树的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-1-%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91%E5%92%8C%E5%93%88%E5%A4%AB%E6%9B%BC%E7%BC%96%E7%A0%81"><span class="toc-text">5.5.1 哈夫曼树和哈夫曼编码</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-2-%E5%B9%B6%E6%9F%A5%E9%9B%86"><span class="toc-text">5.5.2 并查集</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-5-3-%E9%94%99%E9%A2%98"><span class="toc-text">5.5.3 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%9B%BE"><span class="toc-text">6. 图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#6-1-%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">6.1 图的基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-1-%E5%9B%BE%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">6.1.1 图的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-2-%E9%94%99%E9%A2%98"><span class="toc-text">6.1.2 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-2-%E5%9B%BE%E7%9A%84%E5%AD%98%E5%82%A8%E5%8F%8A%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">6.2 图的存储及基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-1-%E9%82%BB%E6%8E%A5%E7%9F%A9%E9%98%B5%E6%B3%95"><span class="toc-text">6.2.1 邻接矩阵法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-2-%E9%82%BB%E6%8E%A5%E8%A1%A8%E6%B3%95"><span class="toc-text">6.2.2 邻接表法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-3-%E5%8D%81%E5%AD%97%E9%93%BE%E8%A1%A8%E6%B3%95%EF%BC%88%E6%9C%89%E5%90%91%E5%9B%BE%EF%BC%89"><span class="toc-text">6.2.3 十字链表法（有向图）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-4-%E9%82%BB%E6%8E%A5%E5%A4%9A%E9%87%8D%E8%A1%A8%EF%BC%88%E6%97%A0%E5%90%91%E5%9B%BE%EF%BC%89"><span class="toc-text">6.2.4 邻接多重表（无向图）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-5-%E5%9B%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">6.2.5 图的基本操作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-6-%E9%94%99%E9%A2%98"><span class="toc-text">6.2.6 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-3-%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86"><span class="toc-text">6.3 图的遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-1-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-text">6.3.1 广度优先搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-2-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2"><span class="toc-text">6.3.2 深度优先搜索</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-3-%E5%9B%BE%E7%9A%84%E9%81%8D%E5%8E%86%E4%B8%8E%E5%9B%BE%E7%9A%84%E8%BF%9E%E9%80%9A%E6%80%A7"><span class="toc-text">6.3.3 图的遍历与图的连通性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-4-%E9%94%99%E9%A2%98"><span class="toc-text">6.3.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-4-%E5%9B%BE%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">6.4 图的应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-1-%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91"><span class="toc-text">6.4.1 最小生成树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-2-%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84"><span class="toc-text">6.4.2 最短路径</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-3-%E6%9C%89%E5%90%91%E6%97%A0%E7%8E%AF%E5%9B%BE%E6%8F%8F%E8%BF%B0%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E5%BE%97%E7%9C%8B%E8%AF%BE"><span class="toc-text">&#x3D;&#x3D;6.4.3 有向无环图描述表达式&#x3D;&#x3D;得看课</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-4-%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F"><span class="toc-text">6.4.4 拓扑排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-5-%E5%85%B3%E9%94%AE%E8%B7%AF%E5%BE%84-%E7%BB%86%E7%A9%B6"><span class="toc-text">&#x3D;&#x3D;6.4.5 关键路径&#x3D;&#x3D;细究</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-4-6-%E9%94%99%E9%A2%98"><span class="toc-text">6.4.6 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E6%9F%A5%E6%89%BE"><span class="toc-text">7. 查找</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#7-1-%E6%9F%A5%E6%89%BE%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-text">7.1 查找的基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-2-%E7%BA%BF%E6%80%A7%E6%9F%A5%E6%89%BE%E8%A1%A8%EF%BC%9A%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE%E8%A1%A8%E5%92%8C%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE"><span class="toc-text">7.2 线性查找表：顺序查找表和折半查找</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-1-%E9%A1%BA%E5%BA%8F%E6%9F%A5%E6%89%BE%E8%A1%A8"><span class="toc-text">7.2.1 顺序查找表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E4%B8%80%E8%88%AC%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-text">1. 一般线性表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%9C%89%E5%BA%8F%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="toc-text">2. 有序线性表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-2-%E6%8A%98%E5%8D%8A%E6%9F%A5%E6%89%BE-%E4%BA%8C%E5%88%86"><span class="toc-text">7.2.2 折半查找 二分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-3-%E5%88%86%E5%9D%97%E6%9F%A5%E6%89%BE%EF%BC%88sign%E8%AE%B0%E5%BD%95%EF%BC%8Cbatch%E5%9D%97"><span class="toc-text">7.2.3 分块查找（sign记录，batch块</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-4-%E9%94%99%E9%A2%98"><span class="toc-text">7.2.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-3-%E6%A0%91%E5%BD%A2%E6%9F%A5%E6%89%BE"><span class="toc-text">7.3 树形查找</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-1-%E4%BA%8C%E5%8F%89%E6%8E%92%E5%BA%8F%E6%A0%91-BST"><span class="toc-text">7.3.1 二叉排序树 BST</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-2-%E5%B9%B3%E8%A1%A1%E4%BA%8C%E5%8F%89%E6%A0%91-AVL"><span class="toc-text">&#x3D;&#x3D;7.3.2 平衡二叉树 AVL&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-4-%E9%94%99%E9%A2%98"><span class="toc-text">7.3.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-4-B%E6%A0%91%E5%92%8CB-%E6%A0%91"><span class="toc-text">7.4 B树和B+树</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-1-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-text">7.4.1 基本操作</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E5%AE%9A%E4%B9%89-%E5%AF%B9%E4%BA%8Em%E9%98%B6B%E6%A0%91%E4%B8%8E%E6%9F%A5%E6%89%BE%EF%BC%88%E9%9A%8F%E4%BE%BF%E6%89%BE%EF%BC%89"><span class="toc-text">1. 基本定义-对于m阶B树与查找（随便找）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-B%E6%A0%91%E9%AB%98%E5%BA%A6"><span class="toc-text">2. B树高度</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-B%E6%A0%91%E6%8F%92%E5%85%A5"><span class="toc-text">3. &#x3D;&#x3D;B树插入&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-B%E6%A0%91%E5%88%A0%E9%99%A4"><span class="toc-text">4. &#x3D;&#x3D;B树删除&#x3D;&#x3D;</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-2-B-%E6%A0%91"><span class="toc-text">7.4.2 B+树</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-3-%E9%94%99%E9%A2%98"><span class="toc-text">7.4.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-5-%E6%95%A3%E5%88%97%E8%A1%A8"><span class="toc-text">7.5 散列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-1"><span class="toc-text">7.5.1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-2-%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95"><span class="toc-text">7.5.2 散列函数构造方法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E7%9B%B4%E6%8E%A5%E5%AE%9A%E5%9D%80%E6%B3%95%EF%BC%88%E5%85%B3%E9%94%AE%E5%AD%97%E5%9F%BA%E6%9C%AC%E8%BF%9E%E7%BB%AD%EF%BC%8C%E7%BA%BF%E6%80%A7%E7%9A%84%EF%BC%89"><span class="toc-text">1. 直接定址法（关键字基本连续，线性的）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E9%99%A4%E7%95%99%E4%BD%99%E6%95%B0%E6%B3%95-%EF%BC%88%E9%80%9A%E7%94%A8%EF%BC%9A%E9%99%A4%E6%95%B0%E9%80%89%E6%8B%A9%E5%A4%A7%E4%BA%8E%E8%A1%A8%E9%95%BF%E7%9A%84%E6%9C%80%E5%A4%A7%E8%B4%A8%E6%95%B0%EF%BC%89"><span class="toc-text">2. &#x3D;&#x3D;除留余数法&#x3D;&#x3D;（通用：除数选择大于表长的最大质数）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-%E6%95%B0%E5%AD%97%E5%88%86%E6%9E%90%E6%B3%95%EF%BC%88%E5%85%B3%E9%94%AE%E5%AD%97%E9%9B%86%E5%90%88%E5%B7%B2%E7%9F%A5%EF%BC%8C%E4%B8%94%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%9F%90%E5%87%A0%E4%B8%AA%E6%95%B0%E5%88%86%E5%B8%83%E5%9D%87%E5%8C%80%EF%BC%8C%E5%A6%82%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%EF%BC%89"><span class="toc-text">3. 数字分析法（关键字集合已知，且关键字的某几个数分布均匀，如电话号码）</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-%E5%B9%B3%E6%96%B9%E5%8F%96%E4%B8%AD%E6%B3%95%EF%BC%88%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E6%AF%8F%E4%BD%8D%E5%8F%96%E5%80%BC%E9%83%BD%E4%B8%8D%E5%A4%9F%E5%9D%87%E5%8C%80%EF%BC%89"><span class="toc-text">4. 平方取中法（关键字的每位取值都不够均匀）</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-3-%E5%A4%84%E7%90%86%E5%86%B2%E7%AA%81%E7%9A%84%E5%8A%9E%E6%B3%95"><span class="toc-text">7.5.3 处理冲突的办法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-%E5%BC%80%E6%94%BE%E5%AE%9A%E5%9D%80%E6%B3%95-%E5%85%B3%E9%94%AE%E6%98%AF%E9%80%89%E6%8B%A9-d-i"><span class="toc-text">1. 开放定址法 关键是选择 $d_i$</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E6%8B%89%E9%93%BE%E6%B3%95%EF%BC%88%E8%BF%9E%E6%8E%A5%E6%B3%95%EF%BC%8Cchaining%EF%BC%89%E9%BB%98%E8%AE%A4%E5%A4%B4%E6%8F%92"><span class="toc-text">2. 拉链法（连接法，chaining）默认头插</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-4-%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90"><span class="toc-text">&#x3D;&#x3D;7.5.4 性能分析&#x3D;&#x3D;</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-ASL"><span class="toc-text">1. ASL</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E5%BD%B1%E5%93%8D%E6%9F%A5%E6%89%BE%E6%95%88%E7%8E%87%E4%B8%89%E4%B8%AA%E5%9B%A0%E7%B4%A0%EF%BC%9A%E6%95%A3%E5%88%97%E5%87%BD%E6%95%B0%EF%BC%8C%E5%A4%84%E7%90%86%E5%86%B2%E7%AA%81%E5%8A%9E%E6%B3%95%EF%BC%8C%E8%A3%85%E5%A1%AB%E5%9B%A0%E5%AD%90"><span class="toc-text">2. 影响查找效率三个因素：散列函数，处理冲突办法，装填因子</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-5-5-%E9%94%99%E9%A2%98"><span class="toc-text">7.5.5 错题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%8E%92%E5%BA%8F"><span class="toc-text">8. 排序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#8-1-%E6%8E%92%E5%BA%8F%E5%AE%9A%E4%B9%89-%E5%85%B3%E9%94%AE%E8%AF%8D"><span class="toc-text">8.1 排序定义 关键词</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-2-%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="toc-text">8.2 插入排序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#8-2-1-%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="toc-text">8.2.1 直接插入排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-2-2-%E6%8A%98%E5%8D%8A%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="toc-text">8.2.2 折半插入排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-2-3-%E5%B8%8C%E5%B0%94%E6%8E%92%E5%BA%8F"><span class="toc-text">8.2.3 希尔排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-2-4-%E9%94%99%E9%A2%98"><span class="toc-text">8.2.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-3-%E4%BA%A4%E6%8D%A2%E6%8E%92%E5%BA%8F"><span class="toc-text">8.3 交换排序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#8-3-1-%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F-%E8%B5%B7%E6%B3%A1%E6%8E%92%E5%BA%8F"><span class="toc-text">8.3.1 冒泡排序 起泡排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-3-2-%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F"><span class="toc-text">8.3.2 快速排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-3-3-%E9%94%99%E9%A2%98"><span class="toc-text">8.3.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-4-%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="toc-text">8.4 选择排序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#8-4-1-%E7%AE%80%E5%8D%95%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F"><span class="toc-text">8.4.1 简单选择排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-4-2-%E5%A0%86%E6%8E%92%E5%BA%8F"><span class="toc-text">8.4.2 堆排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-4-3-%E9%94%99%E9%A2%98"><span class="toc-text">8.4.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-5-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E3%80%81%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F%E3%80%81%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F"><span class="toc-text">8.5 归并排序、基数排序、计数排序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#8-5-1-%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F"><span class="toc-text">8.5.1 归并排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-5-2-%E5%9F%BA%E6%95%B0%E6%8E%92%E5%BA%8F"><span class="toc-text">8.5.2 基数排序</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-5-3-%E8%AE%A1%E6%95%B0%E6%8E%92%E5%BA%8F"><span class="toc-text">&#x3D;&#x3D;8.5.3 计数排序&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-5-4-%E9%94%99%E9%A2%98"><span class="toc-text">8.5.4 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-6-%E5%8E%9F%E7%A5%9E%E7%8E%A9%E5%AE%B6%E5%A4%A7%E6%9D%82%E7%83%A9"><span class="toc-text">8.6 原神玩家大杂烩</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#8-6-1-%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E6%AF%94%E8%BE%83"><span class="toc-text">8.6.1 内部排序算法的比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-6-2-%E5%86%85%E9%83%A8%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">8.6.2 内部排序算法的应用</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-6-3-%E9%94%99%E9%A2%98"><span class="toc-text">8.6.3 错题</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-7-%E6%8B%93%E5%B1%95%EF%BC%9A%E6%A1%B6%E6%8E%92%E5%BA%8F%E8%80%83%E7%BA%B2"><span class="toc-text">8.7 拓展：桶排序考纲</span></a></li></ol></li></ol></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>Scroll to Top</span></a></div></widget>
+</div></aside><div class='float-panel'>
+  <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+  </button>
+  <button type='button' style='display:none' class='mobile-only leftbar-toggle mobile' onclick='sidebar.leftbar()'>
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 11c0-3.771 0-5.657 1.172-6.828C4.343 3 6.229 3 10 3h4c3.771 0 5.657 0 6.828 1.172C22 5.343 22 7.229 22 11v2c0 3.771 0 5.657-1.172 6.828C19.657 21 17.771 21 14 21h-4c-3.771 0-5.657 0-6.828-1.172C2 18.657 2 16.771 2 13z"/><path id="sep" stroke-linecap="round" d="M5.5 10h6m-5 4h4m4.5 7V3"/></g></svg>
+  </button>
+</div>
+</div><div class="scripts">
+
+
+<script type="text/javascript">
+  window.canonical = {"originalHost":null,"officialHosts":["localhost"],"encoded":""};
+  const ctx = {
+    date_suffix: {
+      just: `Just`,
+      min: `minutes ago`,
+      hour: `hours ago`,
+      day: `days ago`,
+    },
+    root : `/`,
+    tag_plugins: {
+      chat: Object.assign({"api":"https://siteinfo.listentothewind.cn/api/v1"}),
+    }
+  };
+
+  // required plugins (only load if needs)
+  if (`local_search`) {
+    ctx.search = {};
+    ctx.search.service = `local_search`;
+    if (ctx.search.service == 'local_search') {
+      let service_obj = Object.assign({}, `{"field":"all","path":"/search.json","content":true,"skip_search":null,"sort":"-date"}`);
+      ctx.search[ctx.search.service] = service_obj;
+    }
+  }
+  const def = {
+    avatar: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/3442075.svg`,
+    cover: `https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/cover/76b86c0226ffd.svg`,
+    loading: `https://api.iconify.design/eos-icons:three-dots-loading.svg?color=%231cd0fd`,
+  };
+  const deps = {
+    jquery: `https://gcore.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js`,
+    marked: `https://gcore.jsdelivr.net/npm/marked@13.0/lib/marked.umd.min.js`,
+    lazyload: `/%5Bobject%20Object%5D`
+  }
+  
+
+</script>
+
+<script type="text/javascript">
+  
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          utils.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+
+  const utils = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    css: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    js: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')) {
+        src = ctx.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function () {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    jq: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        utils.js(deps.jquery).then(fn)
+      } else {
+        fn()
+      }
+    },
+
+    onLoading: (el) => {
+      if (el) {
+        $(el).append('<div class="loading-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" stroke-opacity=".3" d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="1.3s" values="60;0"/></path><path stroke-dasharray="15" stroke-dashoffset="15" d="M12 3C16.9706 3 21 7.02944 21 12"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.3s" values="15;0"/><animateTransform attributeName="transform" dur="1.5s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"/></path></g></svg></div>');
+      }
+    },
+    onLoadSuccess: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap').remove();
+      }
+    },
+    onLoadFailure: (el) => {
+      if (el) {
+        $(el).find('.loading-wrap svg').remove();
+        $(el).find('.loading-wrap').append('<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path stroke-dasharray="60" stroke-dashoffset="60" d="M12 3L21 20H3L12 3Z"><animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="60;0"/></path><path stroke-dasharray="6" stroke-dashoffset="6" d="M12 10V14"><animate fill="freeze" attributeName="stroke-dashoffset" begin="0.6s" dur="0.2s" values="6;0"/></path></g><circle cx="12" cy="17" r="1" fill="currentColor" fill-opacity="0"><animate fill="freeze" attributeName="fill-opacity" begin="0.8s" dur="0.4s" values="0;1"/></circle></svg>');
+        $(el).find('.loading-wrap').addClass('error');
+      }
+    },
+    request: (el, url, callback, onFailure) => {
+      const maxRetry = 3;
+      let retryCount = 0;
+
+      return new Promise((resolve, reject) => {
+        const load = () => {
+          utils.onLoading?.(el);
+
+          let timedOut = false;
+          const timeout = setTimeout(() => {
+            timedOut = true;
+            console.warn('[request] 超时:', url);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject('请求超时');
+            } else {
+              setTimeout(load, 1000);
+            }
+          }, 5000);
+
+          fetch(url).then(resp => {
+            if (timedOut) return;
+            clearTimeout(timeout);
+
+            if (!resp.ok) throw new Error('响应失败');
+            return resp;
+          }).then(data => {
+            if (timedOut) return;
+            utils.onLoadSuccess?.(el);
+            callback(data);
+            resolve(data);
+          }).catch(err => {
+            clearTimeout(timeout);
+            console.warn('[request] 错误:', err);
+
+            if (++retryCount >= maxRetry) {
+              utils.onLoadFailure?.(el);
+              onFailure?.();
+              reject(err);
+            } else {
+              setTimeout(load, 1000);
+            }
+          });
+        };
+
+        load();
+      });
+    },
+    requestWithoutLoading: (url, options = {}, maxRetry = 2, timeout = 5000) => {
+      return new Promise((resolve, reject) => {
+        let retryCount = 0;
+
+        const tryRequest = () => {
+          let timedOut = false;
+          const timer = setTimeout(() => {
+            timedOut = true;
+            if (++retryCount > maxRetry) reject('timeout');
+            else tryRequest();
+          }, timeout);
+
+          fetch(url, options)
+            .then(resp => {
+              clearTimeout(timer);
+              if (!resp.ok) throw new Error('bad response');
+              resolve(resp);
+            })
+            .catch(err => {
+              clearTimeout(timer);
+              if (++retryCount > maxRetry) reject(err);
+              else setTimeout(tryRequest, 500);
+            });
+        };
+
+        tryRequest();
+      });
+    },
+    /********************** requestAnimationFrame ********************************/
+    // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+    // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+    requestAnimationFrame: (fn) => {
+      if (!window.requestAnimationFrame) {
+        window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+      }
+      window.requestAnimationFrame(fn)
+    },
+    dark: {},
+  };
+
+  // utils.dark.mode 当前模式 dark or light
+  // utils.dark.toggle() 暗黑模式触发器
+  // utils.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  utils.dark.method = {
+    toggle: new RunItem(),
+  };
+  utils.dark = Object.assign(utils.dark, {
+    push: utils.dark.method.toggle.push,
+  });
+</script>
+<script>
+  const sidebar = {
+    leftbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    rightbar: () => {
+      if (l_body) {
+        l_body.toggleAttribute('rightbar');
+        l_body.removeAttribute('leftbar');
+      }
+    },
+    dismiss: () => {
+      if (l_body) {
+        l_body.removeAttribute('leftbar');
+        l_body.removeAttribute('rightbar');
+      }
+    },
+    toggleTOC: () => {
+      document.querySelector('#data-toc').classList.toggle('collapse');
+    }
+  }
+</script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
+<script async src="https://gcore.jsdelivr.net/npm/vanilla-lazyload@19.1/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazy",
+    callback_loaded: (el) => {
+      el.classList.add('loaded');
+      const wrapper = el.closest('.lazy-box');
+      const icon = wrapper?.querySelector('.lazy-icon');
+      if (icon) icon.remove();
+    }
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    window.lazyLoadInstance?.update();
+  });
+
+  window.wrapLazyloadImages = (container) => {
+    if (typeof container === 'string') {
+      container = document.querySelector(container);
+    }
+    if (!container) return;
+    
+    const images = container.querySelectorAll('img');
+    images.forEach((img) => {
+      if (img.classList.contains('lazy')) return;
+
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'lazy-box';
+
+      const newImg = img.cloneNode();
+      newImg.removeAttribute('src');
+      newImg.setAttribute('data-src', src);
+      newImg.classList.add('lazy');
+
+      const icon = document.createElement('div');
+      icon.className = 'lazy-icon';
+      if (def.loading) {
+        icon.style.backgroundImage = `url("${def.loading}")`;
+      }
+
+      wrapper.appendChild(newImg);
+      wrapper.appendChild(icon);
+
+      img.replaceWith(wrapper);
+    });
+
+    // 通知 LazyLoad 更新
+    if (window.lazyLoadInstance?.update) {
+      window.lazyLoadInstance.update();
+    }
+  }
+  
+</script>
+
+<!-- required -->
+<script src="/js/main.js?v=1.33.1" defer></script>
+
+<script type="text/javascript">
+  const applyTheme = (theme) => {
+    if (theme === 'auto') {
+      document.documentElement.removeAttribute('data-theme')
+    } else {
+      document.documentElement.setAttribute('data-theme', theme)
+    }
+
+    // applyThemeToGiscus(theme)
+  }
+
+  // FIXME: 这会导致无法使用 preferred_color_scheme 以外的主题
+  const applyThemeToGiscus = (theme) => {
+    // theme = theme === 'auto' ? 'preferred_color_scheme' : theme
+    const cmt = document.getElementById('giscus')
+    if (cmt) {
+      // This works before giscus load.
+      cmt.setAttribute('data-theme', theme)
+    }
+
+    const iframe = document.querySelector('#comments > section.giscus > iframe')
+    if (iframe) {
+      // This works after giscus loaded.
+      const src = iframe.src
+      const newSrc = src.replace(/theme=[\w]+/, `theme=${theme}`)
+      iframe.src = newSrc
+    }
+  }
+
+  const switchTheme = () => {
+    // light -> dark -> auto -> light -> ...
+    const currentTheme = document.documentElement.getAttribute('data-theme')
+    let newTheme;
+    switch (currentTheme) {
+      case 'light':
+        newTheme = 'dark'
+        break
+      case 'dark':
+        newTheme = 'auto'
+        break
+      default:
+        newTheme = 'light'
+    }
+    applyTheme(newTheme)
+    window.localStorage.setItem('Stellar.theme', newTheme)
+    utils.dark.mode = newTheme === 'auto' ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : newTheme;
+    utils.dark.method.toggle.start();
+
+    const messages = {
+      light: `Switched to Light Mode`,
+      dark: `Switched to Dark Mode`,
+      auto: `Switched to Auto Mode`,
+    }
+    hud?.toast?.(messages[newTheme])
+  }
+
+  (() => {
+    // Apply user's preferred theme, if any.
+    const theme = window.localStorage.getItem('Stellar.theme')
+    if (theme !== null) {
+      applyTheme(theme)
+    } else {
+      utils.dark.mode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    utils.dark.method.toggle.start();
+  })()
+</script>
+
+
+<!-- optional -->
+
+
+
+<script defer>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":null},"ghinfo":{"js":"/js/services/ghinfo.js"},"rating":{"js":"/js/services/rating.js","api":"https://star-vote.xaox.cc/api/rating"},"vote":{"js":"/js/services/vote.js","api":"https://star-vote.xaox.cc/api/vote"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"friends_and_posts":{"js":"/js/services/friends_and_posts.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"voice":{"js":"/js/plugins/voice.js"},"video":{"js":"/js/plugins/video.js"},"download-file":{"js":"/js/plugins/download-file.js"},"twikoo":{"js":"/js/services/twikoo_latest_comment.js"},"waline":{"js":"/js/services/waline_latest_comment.js"},"artalk":{"js":"/js/services/artalk_latest_comment.js"},"giscus":{"js":"/js/services/giscus_latest_comment.js"},"contributors":{"edit_this_page":{"_posts/":null,"wiki/stellar/":"https://github.com/xaoxuu/hexo-theme-stellar-docs/blob/main/"},"js":"/js/services/contributors.js"}}`));
+    for (let id of Object.keys(ctx.services)) {
+      const js = ctx.services[id].js;
+      if (id == 'siteinfo') {
+        ctx.cardlinks = document.querySelectorAll('a.link-card[cardlink]');
+        if (ctx.cardlinks?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            setCardLink(ctx.cardlinks);
+          });
+        }
+      } else if (id == 'voice') {
+        ctx.voiceAudios = document.querySelectorAll('.voice>audio');
+        if (ctx.voiceAudios?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            createVoiceDom(ctx.voiceAudios);
+          });
+        }
+      } else if (id == 'video') {
+        ctx.videos = document.querySelectorAll('.video>video');
+        if (ctx.videos?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            videoEvents(ctx.videos);
+          });
+        }
+      } else if (id == 'download-file') {
+        ctx.files = document.querySelectorAll('.file');
+        if (ctx.files?.length > 0) {
+          utils.js(js, { defer: true }).then(function () {
+            downloadFileEvent(ctx.files);
+          });
+        }
+      } else {
+        const els = document.getElementsByClassName(`ds-${id}`);
+        if (els?.length > 0) {
+          utils.jq(() => {
+            if (id == 'timeline' || 'memos' || 'marked') {
+              utils.js(deps.marked).then(function () {
+                utils.js(js, { defer: true });
+              });
+            } else {
+              utils.js(js, { defer: true });
+            }
+          });
+        }
+      }
+    }
+
+    // chat iphone time
+    let phoneTimes = document.querySelectorAll('.chat .status-bar .time');
+
+    if (phoneTimes.length > 0) {
+      NowTime();
+      var date = new Date();
+      var sec = date.getSeconds();
+      var firstAdjustInterval = setInterval(firstAdjustTime, 1000 * (60 - sec));
+    }
+
+    function firstAdjustTime() {
+      NowTime();
+      clearInterval(firstAdjustInterval);
+      setInterval(NowTime, 1000 * 60);
+    }
+
+    function NowTime() {
+      for (let i = 0; i < phoneTimes.length; ++i) {
+        var timeSpan = phoneTimes[i];
+        var date = new Date();
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        timeSpan.innerHTML = check(hour) + ":" + check(min);
+      }
+    };
+
+    function check(val) {
+      if (val < 10) {
+        return ("0" + val);
+      }
+      return (val);
+    }
+
+    // chat quote
+    const chat_quote_obverser = new IntersectionObserver((entries, observer) => {
+      entries.filter((entry) => { return entry.isIntersecting }).sort((a, b) => a.intersectionRect.y !== b.intersectionRect.y ? a.intersectionRect.y - b.intersectionRect.y : a.intersectionRect.x - b.intersectionRect.x).forEach((entry, index) => {
+          observer.unobserve(entry.target);
+          setTimeout(() => {
+            entry.target.classList.add('quote-blink');
+            setTimeout(() => {
+              entry.target.classList.remove('quote-blink');
+            }, 1000);
+          }, Math.max(100, 16) * (index + 1));
+        });
+    });
+
+    var chatQuotes = document.querySelectorAll(".chat .talk .quote");
+    chatQuotes.forEach((quote) => {
+      quote.addEventListener('click', function () {
+        var chatCellDom = document.getElementById("quote-" + quote.getAttribute("quotedCellTag"));
+        if (chatCellDom) {
+          var chatDiv = chatCellDom.parentElement;
+          var mid = chatDiv.clientHeight / 2;
+          var offsetTop = chatCellDom.offsetTop;
+          if (offsetTop > mid - chatCellDom.clientHeight / 2) {
+            chatDiv.scrollTo({
+              top: chatCellDom.offsetTop - mid + chatCellDom.clientHeight / 2,
+              behavior: "smooth"
+            });
+          } else {
+            chatDiv.scrollTo({
+              top: 0,
+              behavior: "smooth"
+            });
+          }
+          chat_quote_obverser.observe(chatCellDom);
+        }
+      });
+    });
+  });
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    ctx.search = {
+      path: `/search.json`,
+    }
+    utils.js('/js/search/local-search.js', { defer: true });
+  });
+</script><script>
+  window.FPConfig = {
+    delay: 0,
+    ignoreKeywords: [],
+    maxRPS: 5,
+    hoverDelay: 25
+  };
+</script>
+<script defer src="https://gcore.jsdelivr.net/npm/flying-pages@2/flying-pages.min.js"></script><script>
+  ctx.fancybox = {
+    selector: `.timenode p>img`,
+    css: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css`,
+    js: `https://gcore.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js`
+  };
+  var selector = '[data-fancybox]:not(.error), .with-fancybox .atk-content img:not([atk-emoticon])';
+  if (ctx.fancybox.selector) {
+    selector += `, ${ctx.fancybox.selector}`
+  }
+  var needFancybox = document.querySelectorAll(selector).length !== 0;
+  if (!needFancybox) {
+    const memos = document.getElementsByClassName('ds-memos');
+    if (memos != undefined && memos.length > 0) {
+      needFancybox = true;
+    }
+    const fancybox = document.getElementsByClassName('with-fancybox');
+    if (fancybox != undefined && fancybox.length > 0) {
+      needFancybox = true;
+    }
+  }
+  if (needFancybox) {
+    utils.css(ctx.fancybox.css);
+    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
+      Fancybox.bind(selector, {
+        hideScrollbar: false,
+        Thumbs: {
+          autoStart: false,
+        },
+        caption: (fancybox, slide) => {
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
+        }
+      });
+    })
+  }
+</script>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const swiper_api = document.getElementById('swiper-api');
+    if (swiper_api != undefined) {
+      utils.css(`https://unpkg.com/swiper@10.3/swiper-bundle.min.css`);
+      utils.js(`https://unpkg.com/swiper@10.3/swiper-bundle.min.js`, { defer: true }).then(function () {
+        const effect = swiper_api.getAttribute('effect') || '';
+        var swiper = new Swiper('.swiper#swiper-api', {
+          slidesPerView: 'auto',
+          spaceBetween: 8,
+          centeredSlides: true,
+          effect: effect,
+          rewind: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    }
+  });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    window.codeElements = document.querySelectorAll('.code');
+    if (window.codeElements.length > 0) {
+      ctx.copycode = {
+        default_text: `Copy`,
+        success_text: `Copied`,
+        toast: `复制成功`,
+      };
+      utils.js('/js/plugins/copycode.js');
+    }
+  });
+</script>
+
+
+<!-- inject -->
+
+</div></body></html>
