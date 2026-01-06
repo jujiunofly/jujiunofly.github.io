@@ -2613,7 +2613,7 @@ div.toast.show {
   font-size: 3rem;
 }
 .page-footer {
-  margin: 4rem 1rem 0px;
+  margin: 4rem 1rem 3rem;
   color: var(--text-p2);
 }
 .page-footer a {
@@ -7192,7 +7192,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_left {
   margin: calc(var(--gap-margin) * 2) var(--gap-margin);
-  max-height: calc(100vh - var(--gap-margin) * 2 - 32px);
+  max-height: calc(100vh - var(--gap-margin) * 2 - 96px);
   border-radius: 24px;
 }
 .l_left .header {
@@ -7237,7 +7237,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   }
 }
 .l_left .leftbar-container {
-  height: calc(100vh - var(--gap-margin) * 2 - 32px);
+  height: calc(100vh - var(--gap-margin) * 2 - 96px);
   display: flex;
   flex-direction: column;
   word-break: break-all;
@@ -8713,13 +8713,13 @@ details.toc[open] >div.body section .header+.doc_tree {
     --inset: 8px;
     left: var(--inset);
     top: calc(var(--gap-margin) * 2);
-    max-height: calc(100vh - var(--gap-margin) * 2 - 32px);
+    max-height: calc(100vh - var(--gap-margin) * 2 - 96px);
     box-shadow: 0 12px 16px -4px rgba(0,0,0,0.2);
     z-index: 10;
   }
   .l_body .l_left .leftbar-container {
     --inset: 8px;
-    height: calc(100vh - var(--gap-margin) * 2 - 32px);
+    height: calc(100vh - var(--gap-margin) * 2 - 96px);
   }
   .l_body .l_main {
     max-width: 100%;
@@ -9052,7 +9052,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_main {
   position: relative;
-  padding-bottom: 0px;
+  padding-bottom: var(--gap-max);
 }
 @media screen and (min-width: 667px) {
   .l_main {
