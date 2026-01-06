@@ -28,8 +28,8 @@
 <meta property="og:description" content="fadsfasf">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://jujiunofly.top/images/avatar.png">
-<meta property="article:published_time" content="2026-01-06T11:57:19.057Z">
-<meta property="article:modified_time" content="2026-01-06T11:57:19.057Z">
+<meta property="article:published_time" content="2026-01-06T13:10:11.727Z">
+<meta property="article:modified_time" content="2026-01-06T13:10:11.727Z">
 <meta property="article:author" content="Ju Jiu">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://jujiunofly.top/images/avatar.png">
@@ -57,20 +57,6 @@
     font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
   }
-  
-  /* 标题字体 */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", sans-serif;
-    font-weight: 600;
-  }
-  
-  /* 正文字体 */
-  p, li, article {
-    font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", sans-serif;
-    font-weight: 400;
-    line-height: 1.8;
-  }
-  
   /* 代码字体保持等宽 */
   code, pre {
     font-family: "JetBrains Mono", "Fira Code", "Consolas", "Monaco", monospace;
@@ -112,22 +98,19 @@
     background: var(--card) !important;
   }
 
-  /* 移除 navbar 的白色发光效果 */
-  .navbar-blur {
-    text-shadow: none !important;
-  }
-  
-  .navbar-blur nav a:not(.active,:hover) {
-    filter: none !important;
+  /* 自定义侧边栏底部边距 */
+  .l_left .leftbar-container {
+    height: calc(100vh - var(--gap-margin) * 2 - 32px) !important;
+    max-height: calc(100vh - var(--gap-margin) * 2 - 32px) !important;
   }
 
-  /* 移除 navbar 的模糊和饱和度效果（蓝光来源） */
-  .navbar-blur::before,
-  .navbar-blur::after {
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-    filter: none !important;
-    background: var(--card) !important;
+  /* 移除 navbar 蓝色背景 */
+  .nav-area .menu .nav-item {
+    background: rgba(255, 255, 255, 0.3) !important;
+  }
+  .nav-area .menu .nav-item.active,
+  .nav-area .menu .nav-item:hover {
+    background: rgba(255, 255, 255, 0.6) !important;
   }
 
 </style>
@@ -154,7 +137,7 @@
 
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/pangdou/shoudou/test1%20copy%204/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1%20copy/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1/"><span class="title">test1</span></a><a class="item title" href="/uncategorized/hello-world/"><span class="title">Paodou</span></a><a class="item title" href="/pangdou/shoudou/test1%20copy%202/"><span class="title">test1</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/pangdou/shoudou/test1%20copy%202/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1%20copy%203/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1%20copy%204/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1%20copy/"><span class="title">test1</span></a><a class="item title" href="/pangdou/shoudou/test1/"><span class="title">test1</span></a></div></widget>
 </div>
 <footer class="footer dis-select"><div class="social-wrap"><a class="social" href="/" rel="noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/08a41b181ce68.svg"/></a><a class="social" href="/" rel="noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/3845874.svg"/></a><a class="social" href="/" rel="noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/3616429.svg"/></a><a class="social" href="/about/#comments" rel="noopener noreferrer"><img src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/942ebbf1a4b91.svg"/></a></div></footer>
 </div></aside><div class="l_main" id="main">
@@ -167,7 +150,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki/">文档</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/notes/">探索</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-01-06T11:57:19.057Z">2026-01-06</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2026-01-06T13:10:11.727Z">2026-01-06</time></span></div></div></div>
     
     <div class="bottom only-title">
       
