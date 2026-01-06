@@ -1561,7 +1561,7 @@ pre:not([class]):has(>code) {
 .md-text .highlight >table::-webkit-scrollbar-thumb {
   background: transparent;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .md-text .highlight >table:hover::-webkit-scrollbar-thumb {
   background: var(--text-meta);
@@ -1874,7 +1874,7 @@ table:not([class]) {
   outline: none;
 }
 html {
-  font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, "Microsoft Yahei", "Segoe UI", Arial, sans-serif;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -2902,7 +2902,7 @@ div.toast.show {
 }
 .related-wrap a.more {
   padding: 0.25rem 0.5rem;
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--text-p1);
 }
 article.md-text.content+.related-wrap {
@@ -3490,7 +3490,7 @@ a.tag-plugin.button:hover {
 .md-text .tag-plugin.chat >.content::-webkit-scrollbar-thumb {
   background: transparent;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .md-text .tag-plugin.chat >.content:hover::-webkit-scrollbar-thumb {
   background: var(--text-meta);
@@ -4354,7 +4354,7 @@ a.tag-plugin.button:hover {
   justify-content: space-between;
   box-sizing: border-box;
   background: var(--card);
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid var(--block-border);
   overflow: hidden;
   width: 100%;
@@ -4385,7 +4385,7 @@ a.tag-plugin.button:hover {
 }
 .md-text .tag-plugin.copy button.copy-btn {
   margin: 2px 2px 2px 0;
-  border-radius: calc(8px - 2px);
+  border-radius: calc(6px - 2px);
   display: inline-block;
   background: var(--block);
   transition: all 0.2s ease-out;
@@ -6967,7 +6967,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   box-sizing: border-box;
   width: 100%;
   min-height: 40px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 0.9375rem;
   font-weight: 500;
   color: var(--text-p3);
@@ -7049,7 +7049,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   bottom: 0;
   left: 1rem;
   right: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--bg-a100);
   z-index: 0;
   transition: all 0.2s ease-out;
@@ -7073,7 +7073,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .search-wrapper .search-input {
   width: 100%;
   box-sizing: border-box;
-  font-family: "LXGW WenKai Screen", system-ui, "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: system-ui, "Microsoft Yahei", "Segoe UI", Arial, sans-serif;
   font-size: 0.875rem;
   padding: 12px 0;
   color: var(--text);
@@ -7087,7 +7087,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   }
 }
 .search-wrapper .search-button {
-  border-radius: 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   height: 40px;
@@ -7121,7 +7121,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   max-height: 60vh;
   overflow: auto;
   scrollbar-width: none;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .search-wrapper #search-result::-webkit-scrollbar {
   height: 0;
@@ -7246,7 +7246,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   overflow: hidden;
 }
 .l_left .leftbar-container >.widgets {
-  border-radius: 8px;
+  border-radius: 6px;
   mask: linear-gradient(#fff, 90%, transparent);
   -webkit-mask: linear-gradient(#fff, 90%, transparent);
 }
@@ -7298,7 +7298,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   grid-gap: 8px;
 }
 .linklist .link {
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--text-p2);
   min-height: 32px;
   padding: 0 4px;
@@ -7525,7 +7525,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   font-size: 0.875rem;
   padding: 6px 16px;
   display: block;
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--text-p1);
   transition: background 0.2s ease-out;
   -moz-transition: background 0.2s ease-out;
@@ -7740,7 +7740,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   color: var(--text-p3);
   display: block;
   position: relative;
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -7893,7 +7893,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   color: inherit;
   font-size: 0.875rem;
   padding: 8px var(--gap-padding);
-  border-radius: 8px;
+  border-radius: 6px;
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
@@ -8099,7 +8099,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .post-list #cats a.cat {
   display: flex;
   padding: 0.5em 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--text-p2);
   align-items: center;
   justify-content: space-between;
@@ -9377,8 +9377,8 @@ a[data-fancybox] {
   padding: 0px 0.5rem;
   font-weight: 700;
   visibility: hidden;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
   background: var(--card);
   display: block;
   cursor: pointer;
@@ -9405,7 +9405,7 @@ a[data-fancybox] {
 .md-text .folding[child=codeblock] .code .copy-btn {
   z-index: 1;
   margin-right: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 .cmt-body.beaudar {
   margin: 0 -4px;
@@ -9870,7 +9870,7 @@ a[data-fancybox] {
   display: block;
 }
 .cmt-body.artalk .atk-notify-wrap .atk-notify {
-  border-radius: 8px;
+  border-radius: 6px;
   margin: 8px;
 }
 .cmt-body.artalk .atk-editor-plug-emoticons>.atk-grp-wrap>.atk-grp {
