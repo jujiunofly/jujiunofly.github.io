@@ -48,7 +48,12 @@
   
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://jujiunofly.top","author":{"@type":"Person","name":"Ju Jiu","sameAs":[],"image":"http://jujiunofly.top/images/avatar.png"},"name":"JUJIU","description":"Love you","url":"http://jujiunofly.top"}</script>
-  
+  <style>
+  /* 主题默认左栏在 1fr 宽列里右对齐，宽屏会离屏幕很远。改成按侧栏实际宽度排，贴着主题 gap-page 边距。 */
+  .l_body { grid-template-columns: max-content minmax(200px, var(--width-main)) 1fr; }
+  .l_body .l_left { justify-self: start; }
+</style>
+
 
   <!-- icons.yml 驱动的 CSS 装饰图标 -->
   
@@ -216,7 +221,7 @@
 <div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a href="/">近期发布</a><a class="active" href="/blog/categories/">分类：感想</a><a href="/blog/tags/">标签</a><a href="/blog/archives/">归档</a></nav></div></div></div>
 
 <div class="post-list post"><div class="post-card-wrap slide-up"><a class="post-card post card-hover card-hover--spotlight card-hover--tilt" href="/blog/20260908/">
-<article class="md-text"><h2 class="post-title">仲鸡的远吧</h2><div class="excerpt"><p>写给行玉的一份起步清单。</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg class="icon" data-icon="default:calendar" aria-hidden="true"></svg><time datetime="2026-09-08T05:12:00.000Z">2026-09-08</time></span><span class="cap breadcrumb"><svg class="icon" data-icon="default:category" aria-hidden="true"></svg><span>感想</span></span></div></article>
+<article class="md-text"><h2 class="post-title">仲鸡的远吧</h2><div class="excerpt"><p>写给行玉的一份起步清单。</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg class="icon" data-icon="default:calendar" aria-hidden="true"></svg><time datetime="2026-09-08T13:12:00.000Z">2026-09-08</time></span><span class="cap breadcrumb"><svg class="icon" data-icon="default:category" aria-hidden="true"></svg><span>感想</span></span></div></article>
 </a></div></div>
 
 
